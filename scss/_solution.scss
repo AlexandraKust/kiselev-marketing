@@ -1,0 +1,143 @@
+.solution {
+	padding: 8.2rem 0;
+
+	&__row {
+		align-items: start;
+		justify-content: space-between;
+	}
+
+	&__text {
+		flex: 0 0 84.5rem;
+		padding-left: 7.1rem;
+	}
+
+	&__title {
+		margin-bottom: 7rem;
+		line-height: 7.4rem;
+
+		.section-title__up {
+			display: inline-block;
+			margin-bottom: 5.3rem;
+		}
+	}
+
+	&__descr {
+		margin-bottom: 6rem;
+		font-weight: 700;
+		font-size: 3.2rem;
+		line-height: 4.5rem;
+
+		span {
+			font-weight: 400;
+			color: $gray-1;
+		}
+	}
+
+	&__cross {
+		text-decoration: line-through;
+	}
+
+	&__sibtitle {
+		margin-bottom: 3.1rem;
+		font-weight: 500;
+		font-size: 6rem;
+		line-height: 125%;
+	}
+
+	&__list {
+		flex-wrap: wrap;
+		column-gap: 17.5rem;
+		row-gap: 4rem;
+	}
+
+	&__item {
+		flex: 0 0 22rem;
+		font-size: 2rem;
+		line-height: 2.7rem;
+	}
+
+	&__video {
+		position: relative;
+		flex: 0 0 63rem;
+		border-radius: 1.5rem;
+		transition: box-shadow 0.3s ease;
+
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0 0 1rem 0.1rem rgba(221, 221, 221, 0.3);
+
+			.solution__play {
+				transform: scale(1.1);
+				box-shadow: 0 0 1rem 0.5rem rgba(221, 221, 221, 0.3);
+			}
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		border-radius: 1.5rem;
+		overflow: hidden;
+	}
+
+	&__play {
+		position: absolute;
+		left: 8.1rem;
+		top: 6.6rem;
+		z-index: 3;
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $accent-color;
+		transition-property: transform, box-shadow;
+		transition: 0.3s ease;
+
+		img {
+			width: 1.4rem;
+			height: 1.6rem;
+		}
+	}
+
+	&__label {
+		position: absolute;
+		left: 8.1rem;
+		bottom: 7.5rem;
+		width: 25.4rem;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.7rem;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 768px) {
+	.solution {
+
+		&__row {}
+
+		&__text {}
+
+		&__title {}
+
+		&__descr {}
+
+		&__cross {}
+
+		&__sibtitle {}
+
+		&__list {}
+
+		&__item {}
+
+		&__video {}
+
+		&__img {}
+
+		&__play {}
+
+		&__label {}
+	}
+}

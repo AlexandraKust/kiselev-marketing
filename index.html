@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kiselev Marketing</title>
+	<!-- <link rel="icon" type="image/svg+xml" href="media/favicon.svg"> -->
+	<!-- <link rel="icon" type="image/png" href="media/favicon.png"> -->
+	<link rel="stylesheet" href="libs/custom-select.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+		integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__row flex">
+				<div class="header__info flex">
+					<a href="index.html" class="header__logo">
+						<img src="media/svg/logo.svg" alt="kiselev Marketing">
+					</a>
+					<p class="header__descr">
+						Комплексное продвижение мебельных компаний
+						под ключ с&nbsp;2017 года
+					</p>
+				</div>
+				<div class="header__grade flex">
+					<p class="header__rating">5,0</p>
+					<p class="header__text">
+						<b>Впечатлениями о&nbsp;работе</b>
+						готовы поделиться более
+						90+&nbsp;наших клиентов
+					</p>
+				</div>
+				<div class="header__social flex">
+					<div class="header__whatsapp">
+						<img src="media/svg/whatsapp.svg" alt="whatsapp">
+					</div>
+					<p class="header__write">
+						Пишите нам, мы
+						<b>всегда онлайн</b>
+					</p>
+				</div>
+				<div class="header__call">
+					<a class="header__number" href="tel:+79699990143">+7 (969) 999-01-43</a>
+					<p class="header__callback callback-open">Перезвоните мне</p>
+				</div>
+				<button class="header__burger" aria-label="открыть/закрыть навигационное меню">
+					<span></span>
+					<span></span>
+				</button>
+				<nav class="header__nav nav flex">
+					<div class="nav__row flex">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="#" class="nav__link">Калькулятор</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Ваши преимущества</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Кейсы</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Видеоотзывы</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Тест-драйв</a></li>
+						</ul>
+						<ul class="nav__list">
+							<li class="nav__item"><a href="#" class="nav__link">Что входит</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Как усиливаем</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Как контролируете</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Консультация</a></li>
+						</ul>
+					</div>
+					<div class="header__bottom flex">
+						<div class="header__info flex">
+							<a href="index.html" class="header__logo">
+								<img src="media/svg/logo.svg" alt="kiselev Marketing">
+							</a>
+							<p class="header__descr">
+								Комплексное продвижение мебельных компаний
+								под ключ с&nbsp;2017 года
+							</p>
+						</div>
+						<div class="header__contacts">
+							<p>ИП: Киселев Никита Валерьевич</p>
+							<p>ОГРНИП: 32202 80000 37012</p>
+							<p>ИНН: 0276 1793 7409</p>
+						</div>
+						<div class="header__lefts">
+							<p class="header__conf conf">Политика конфиденциальности</p>
+							<p>Copyright 2023. Все права защищены</p>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="container">
+			<div class="hero__row">
+				<h1 class="visually-hidden">
+					Получайте
+					от 90-150 горячих заявок
+					в месяц на кухни и шкафы с гарантией результата
+				</h1>
+				<div class="hero__title">
+					<span class="hero__title--big">Получайте</span>
+					<div class="hero__title--middle">
+						от 90
+						<div class="hero__switch switch active">
+							<div class="switch__handle"></div>
+						</div>
+						150 горячих заявок
+					</div>
+					в месяц <span class="underline">на кухни и шкафы</span> с гарантией результата
+				</div>
+				<p class="hero__subtitle">
+					И&nbsp;<span class="stroke">
+						обойдите конкурентов
+						<svg viewBox="0 0 736 94" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M1 64.0577C102.041 78.5814 195.125 87.0065 353.777 90.3783C384.261 91.0253 414.791 89.636 445.094 87.5586C550.133 80.3586 628.601 82.2928 688.896 60.4809C889.498 -12.0868 151.221 -6.54811 65.4433 15.981C-1.36649 33.5285 1.84137 80.5143 289.497 91.1864C577.152 101.858 787.71 63.2168 723.365 33.3363C671.89 9.43197 353.606 7.42907 190.583 15.981"
+								stroke-width="1" stroke-linecap="round" />
+						</svg>
+					</span> в&nbsp;своем городе
+				</p>
+
+				<ul class="hero__causes flex">
+					<li class="hero__item">
+						Первые <span class="accent">10-25 заявок</span> через 24&nbsp;часа
+					</li>
+					<li class="hero__item">
+						Маркетинговая система безотказно работает <span class="accent">в&nbsp;87&nbsp;городах России</span>
+					</li>
+					<li class="hero__item">
+						Приведем вам<br> клиентов на&nbsp;сумму <span class="accent">от 1&nbsp;500&nbsp;000&nbsp;руб
+							в&nbsp;месяц</span>
+					</li>
+				</ul>
+
+				<button class="hero__btn main-btn main-btn--green">
+					<span class="main-btn__text">Получить заявки</span>
+					<span class="main-btn__arrow">
+						<img src="media/svg/arrow-btn.svg" alt="">
+					</span>
+					<span class="btn-blick"></span>
+				</button>
+
+				<div class="hero__label">
+					<p class="hero__name">Никита Киселев</p>
+					<p class="hero__job">руководитель</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<main class="main">
+		<!-- квиз -->
+		<section class="quiz" id="quiz">
+			<div class="container">
+				<h2 class="quiz__title section-title">
+					Узнайте за&nbsp;1&nbsp;минуту, сколько можно получить заявок
+					на&nbsp;кухни в&nbsp;вашем городе
+				</h2>
+				<p class="quiz__subtitle">
+					результат в&nbsp;конце теста&nbsp;&mdash; просто отвечайте на&nbsp;вопросы
+				</p>
+
+				<div class="quiz__inner animation">
+					<div class="quiz__body flex">
+						<form action="mailer/send.php" method="POST" class="quiz__form" data-form-validate-js>
+							<input type="hidden" name="formname" value="quiz">
+							<div class="quiz__progress">
+								<div class="quiz__progress-bar">
+									<div class="quiz__progress-inner" style="width: 20%;"></div>
+								</div>
+								<p class="quiz__progress-text">
+									<b>Вопрос <span class="js-quiz">1</span></b> из 4
+								</p>
+							</div>
+							<div class="quiz__items">
+								<div class="quiz-item">
+									<input type="hidden" name="title-1" value="Откуда к вам сейчас приходят заявки?">
+									<p class="quiz-item__overhead">Определяем стартовую точку</p>
+									<h3 class="quiz-item__title fade-in">
+										Откуда к вам сейчас приходят заявки?
+									</h3>
+									<div class="quiz-options flex" data-quiz-multi-answer>
+										<div class="quiz-option">
+											<input type="checkbox" class="quiz-option__input" name="quiz1[]" id="quiz1-1" value="Сарафан">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__checkbox">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														Сарафан
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="checkbox" class="quiz-option__input" name="quiz1[]" id="quiz1-2"
+												value="Социальные сети (ВК, Одноклассники)">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__checkbox">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														Социальные сети (ВК, Одноклассники)
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="checkbox" class="quiz-option__input" name="quiz1[]" id="quiz1-3"
+												value="Доски объявлений (Авито, Юла)">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__checkbox">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														Доски объявлений (Авито, Юла)
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="checkbox" class="quiz-option__input" name="quiz1[]" id="quiz1-4"
+												value="Оффлайн-реклама">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__checkbox">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														Оффлайн-реклама
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="checkbox" class="quiz-option__input" name="quiz1[]" id="quiz1-5"
+												value="Интернет-реклама (Яндекс, Вконтакте)">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__checkbox">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														Интернет-реклама (Яндекс, Вконтакте)
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="checkbox" class="quiz-option__input" name="quiz1[]" id="quiz1-6"
+												value="Нет источников">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__checkbox">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														Нет источников
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="quiz-item" style="display:none;">
+									<input type="hidden" name="title-2" value="Гарантии">
+									<h3 class="quiz-item__title quiz-item__title--2">
+										Хотим, чтобы вы знали ваши гарантии при
+										обращении к нам:
+									</h3>
+									<div class="quiz-options quiz-options--video flex">
+										<ul class="quiz-item__list">
+											<li class="quiz-item__list-item">
+												<b>Не&nbsp;будет заявок&nbsp;</b>&mdash; вернем деньги.
+											</li>
+											<li class="quiz-item__list-item">
+												<b>Если поймем, что не&nbsp;можем гарантировать вам результат</b>&nbsp;&mdash; честно скажем
+												об&nbsp;этом и&nbsp;не&nbsp;будем предлагать сотрудничество.
+											</li>
+											<li class="quiz-item__list-item">
+												<b>Подписываем официальный договор</b> с&nbsp;гарантиями.
+											</li>
+											<li class="quiz-item__list-item">
+												<b>Получаете горячих клиентов</b> с&nbsp;нужными чеками, а&nbsp;не&nbsp;заявки, которым нужна
+												кухня
+												через год, размером 5&nbsp;метров и&nbsp;бюджетом до&nbsp;20.000&nbsp;руб.
+											</li>
+											<li class="quiz-item__list-item">
+												<b>Более 87&nbsp;клиентов</b> по&nbsp;корпусной мебели готовы поделиться с&nbsp;вами
+												впечатлениями
+												о&nbsp;работе&nbsp;&mdash; напишите любому.
+											</li>
+											<li class="quiz-item__list-item">
+												<b>Помощь и&nbsp;поддержка:</b> даем скрипты продаж, разбираем ваши звонки, внедряем CRM систему
+												и&nbsp;ставим отдел продаж на&nbsp;самостоятельные рельсы.
+											</li>
+											<li class="quiz-item__list-item">
+												<b>Работа вдолгую:</b> в&nbsp;среднем сотрудничаем с&nbsp;клиентами&nbsp;&mdash; 1&nbsp;год
+												и&nbsp;4
+												месяца.
+											</li>
+										</ul>
+										<div class="quiz-item__video">
+											<a href="#" class="quiz-item__play" data-fancybox="quiz-video">
+												<img src="media/svg/play.svg" alt="">
+											</a>
+											<div class="quiz-item__img">
+												<picture>
+													<source srcset="media/img/quiz-video.webp" type="image/webp">
+													<img src="media/img/quiz-video.jpg" alt="">
+												</picture>
+											</div>
+											<p class="quiz-item__video-descr">
+												Поймите наш подход за 3 минуты, посмотрите видео Никиты, руководителя агентства
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="quiz-item" style="display:none;">
+									<input type="hidden" name="title-3"
+										value="Сколько дополнительных заказов в	ближайший месяц вы можете взять?">
+									<p class="quiz-item__overhead">Выясняем, какие у вас планы </p>
+									<h3 class="quiz-item__title fade-in">
+										Сколько дополнительных заказов в
+										ближайший месяц вы можете взять?
+									</h3>
+									<div class="quiz-options quiz-options--col flex" data-quiz-single-answer>
+										<div class="quiz-option">
+											<input type="radio" class="quiz-option__input" name="quiz3" id="quiz3-1" value="10-15 заказов">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__radio">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														10-15 заказов
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="radio" class="quiz-option__input" name="quiz3" id="quiz3-2" value="15-20 заказов">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__radio">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														15-20 заказов
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="radio" class="quiz-option__input" name="quiz3" id="quiz3-3" value="20-25 заказов">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__radio">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														20-25 заказов
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="radio" class="quiz-option__input" name="quiz3" id="quiz3-4" value="от 25 и выше">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__radio">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														от 25 и выше
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-image">
+											<picture>
+												<source srcset="media/img/kitchen.webp" type="image/webp">
+												<img src="media/img/kitchen.png" alt="">
+											</picture>
+										</div>
+									</div>
+								</div>
+								<div class="quiz-item" style="display:none;">
+									<input type="hidden" name="title-4" value="Какой ежемесяный рекламный бюджет вы
+										планируете на продвижение?">
+									<p class="quiz-item__overhead">Выясняем, какие у вас планы </p>
+									<h3 class="quiz-item__title fade-in">
+										Какой ежемесяный рекламный бюджет вы
+										планируете на&nbsp;продвижение?
+									</h3>
+									<div class="quiz-options quiz-options--col flex" data-quiz-single-answer>
+										<div class="quiz-option">
+											<input type="radio" class="quiz-option__input" name="quiz4" id="quiz4-1"
+												value="от 30 000 - 45 000 руб">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__radio">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														от 30 000 - 45 000 руб
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="radio" class="quiz-option__input" name="quiz4" id="quiz4-2"
+												value="45 000 - 60 000 руб">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__radio">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														45 000 - 60 000 руб
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="radio" class="quiz-option__input" name="quiz4" id="quiz4-3"
+												value="60 000 - 75 000 руб">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__radio">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														60 000 - 75 000 руб
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-option">
+											<input type="radio" class="quiz-option__input" name="quiz4" id="quiz4-4" value="свыше 75 000 руб">
+											<div class="quiz-option__wrapper">
+												<div class="quiz-option__wrap">
+													<div class="quiz-option__radio">
+														<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7.85743 0.829457L7.15248 0.139535C7.05743 0.0465116 6.93861 0 6.80396 0C6.66931 0 6.5505 0.0465116 6.45545 0.139535L3.06535 3.45736L1.55248 1.96899C1.45743 1.87597 1.33861 1.82946 1.20396 1.82946C1.06931 1.82946 0.950495 1.87597 0.855446 1.96899L0.150495 2.65891C0.0475248 2.75194 0 2.86822 0 3C0 3.13178 0.0475247 3.24806 0.142574 3.34109L2.01188 5.17054L2.71683 5.86047C2.81188 5.95349 2.93069 6 3.06535 6C3.2 6 3.31881 5.95349 3.41386 5.86047L4.11881 5.17054L7.85743 1.51163C7.95248 1.4186 8 1.30233 8 1.17054C8 1.03876 7.95248 0.922481 7.85743 0.829457Z" />
+														</svg>
+													</div>
+													<p class="quiz-option__label">
+														свыше 75 000 руб
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="quiz-image">
+											<picture>
+												<source srcset="media/img/budget.webp" type="image/webp">
+												<img src="media/img/budget.png" alt="">
+											</picture>
+										</div>
+									</div>
+								</div>
+								<div class="quiz-item quiz-item--final flex" style="display:none;">
+									<h3 class="quiz-item__title">
+										Предварительный результат по вашим ответам:
+									</h3>
+									<ul class="quiz__results flex">
+										<li class="quiz-result flex">
+											<p class="quiz-result__descr">Количество заявок </p>
+											<p class="quiz-result__total">50 - 120</p>
+										</li>
+										<li class="quiz-result flex">
+											<p class="quiz-result__descr">Количество замеров / встреч </p>
+											<p class="quiz-result__total">10 - 24</p>
+										</li>
+										<li class="quiz-result flex">
+											<p class="quiz-result__descr">Сумма продаж, руб </p>
+											<p class="quiz-result__total">450 000 - 1 080 000 рублей</p>
+										</li>
+									</ul>
+									<p class="quiz-item__info stroke">
+										Мы&nbsp;не&nbsp;завышаем ожидание на&nbsp;этапе обсуждения проекта. Лучше превзойдем
+										их&nbsp;на&nbsp;практике. <b>С&nbsp;большой вероятностью, результаты у&nbsp;вас будут выше.</b>
+										<svg viewBox="0 0 736 94" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1 64.0577C102.041 78.5814 195.125 87.0065 353.777 90.3783C384.261 91.0253 414.791 89.636 445.094 87.5586C550.133 80.3586 628.601 82.2928 688.896 60.4809C889.498 -12.0868 151.221 -6.54811 65.4433 15.981C-1.36649 33.5285 1.84137 80.5143 289.497 91.1864C577.152 101.858 787.71 63.2168 723.365 33.3363C671.89 9.43197 353.606 7.42907 190.583 15.981"
+												stroke-width="1" stroke-linecap="round" />
+										</svg>
+									</p>
+									<h3 class="quiz-item__title">
+										Оставьте контактный номер
+									</h3>
+									<p class="quiz-item__sub">
+										мы свяжемся и рассчитаем конкретнее.
+									</p>
+									<div class="quiz-item__row flex">
+										<label class="label">Ваш номер телефона</label>
+										<input class="input" type="tel" placeholder="+7 ( _ _ _ ) - _ _ _ - _ _ - _ _">
+										<button class="main-btn main-btn--green">
+											<span class="main-btn__text">получить точный<br> расчет</span>
+											<span class="main-btn__arrow">
+												<img src="media/svg/arrow-btn.svg" alt="">
+											</span>
+											<span class="btn-blick"></span>
+										</button>
+										<div class="quiz-item__agree agree">
+											<div class="agree__checkbox"></div>
+											<p class="agree__text">
+												Cогласен с условиями <span class="agree__link conf">политики конфиденциальности данных</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="quiz__bottom">
+								<div class="quiz__btns flex">
+									<button class="quiz-btn main-btn quiz-btn--prev" style="display:none;">
+										<span class="main-btn__text">Назад</span>
+									</button>
+									<button class="quiz-btn main-btn main-btn--green quiz-btn--next" disabled="">
+										<span class="btn-blick"></span>
+										<span class="main-btn__text">Далее</span>
+										<span class="main-btn__arrow">
+											<img src="media/svg/arrow-btn.svg" alt="">
+										</span>
+										<span class="quiz-btn__hint">Ответьте на вопрос выше</span>
+									</button>
+								</div>
+							</div>
+						</form>
+						<div class="quiz__left desktop">
+							<div class="quiz__left-plate quiz-plate">
+								<div class="quiz-plate__head">
+									<p class="quiz-plate__name">Ольга</p>
+									<p class="quiz-plate__job">проджект-менеджер</p>
+								</div>
+								<div class="quiz-plate__text">
+									Рассчитаю по&nbsp;вашим <br>
+									ответам количество заявок
+									и&nbsp;сориентирую по&nbsp;прогнозам
+									продаж в&nbsp;вашем городе
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- решите проблему -->
+		<section class="solution">
+			<div class="container">
+				<div class="solution__row flex">
+					<div class="solution__text">
+						<h2 class="solution__title section-title">
+							<span class="section-title__up">Решите</span>
+							проблему отсутствия заявок
+							<span class="stroke">
+								1 раз и навсегда
+								<svg viewBox="0 0 736 94" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1 64.0577C102.041 78.5814 195.125 87.0065 353.777 90.3783C384.261 91.0253 414.791 89.636 445.094 87.5586C550.133 80.3586 628.601 82.2928 688.896 60.4809C889.498 -12.0868 151.221 -6.54811 65.4433 15.981C-1.36649 33.5285 1.84137 80.5143 289.497 91.1864C577.152 101.858 787.71 63.2168 723.365 33.3363C671.89 9.43197 353.606 7.42907 190.583 15.981"
+										stroke-width="1" stroke-linecap="round" />
+								</svg>
+							</span>
+						</h2>
+						<p class="solution__descr">
+							Мы&nbsp;делаем <span class="solution__cross">сайты, группы Вконтакте, рекламу</span> систему, которая
+							генерирует вам клиентов с&nbsp;первого дня
+							<span>и&nbsp;комплексно влияем на&nbsp;достижение измеримых целей вашего бизнеса.</span>
+						</p>
+						<p class="solution__sibtitle">Вы получаете:</p>
+						<ul class="solution__list flex">
+							<li class="solution__item">
+								<span class="accent">Экономию</span> <b>бюджета</b>, времени и нервов
+							</li>
+							<li class="solution__item">
+								От <span class="accent">10 до 100</span> <b>целевых заявок</b> каждый день
+							</li>
+							<li class="solution__item">
+								<span class="accent">Маркетинговую</span> <b>стратегию</b>, как стать №1 в своем городе
+							</li>
+							<li class="solution__item">
+								<span class="accent">Стабильный</span> <b>и прогнозируемый рост</b> продаж и прибыли
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="solution__video" data-fancybox="solution-video">
+						<div class="solution__img">
+							<picture>
+								<source srcset="media/img/img-video.webp" type="image/webp">
+								<img src="media/img/img-video.jpg" alt="">
+							</picture>
+						</div>
+						<button class="solution__play">
+							<img src="media/svg/play.svg" alt="">
+						</button>
+						<p class="solution__label">
+							Всего 3&nbsp;минуты&nbsp;&mdash; закрою 90% ваших сомнений
+						</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="">
+			<div class="container">
+				<h2 class="__title section-title"></h2>
+			</div>
+		</section> -->
+	</main>
+
+	<footer class="footer">
+		<div class="container"></div>
+	</footer>
+
+	<!-- кнопка прокрутки наверх -->
+	<button class="btn-top" aria-label="прокрутить страницу наверх">
+		<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M7.8331 3.91699L6.70766 5.04244L3.91655 2.25133L1.12545 5.04244L0 3.91699L3.91655 0.000440723L7.8331 3.91699Z" />
+		</svg>
+	</button>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+		integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+		integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+		integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="libs/jquery.cookie.js"></script>
+	<script src="libs/lazyload.min.js"></script>
+	<script src="libs/custom-select.min.js"></script>
+	<script src="libs/jquery.validate.min.js"></script>
+
+	<script src="js/script.js"></script>
+	<script>
+		// $(document).mouseleave(function () {
+		// 	if (event.clientY < 3) {
+		// 		let leave = 1;
+		// 		if (+$.cookie('leave-popup')) {
+		// 			leave = 0;
+		// 		}
+		// 		if (leave) {
+		// 			$('.popup-wait').addClass('active');
+		// 			$.cookie('leave-popup', 1, { expires: 7 });
+		// 		}
+		// 	}
+		// });
+	</script>
+
+</body>
+
+</html>
