@@ -1449,7 +1449,7 @@ b {
   border: 0.3rem solid rgba(255, 255, 255, 0.1);
   border-radius: 5rem;
   overflow: hidden;
-  background: url("../media/img/quiz-bg.png") center center/cover no-repeat;
+  background: url("../media/img/quiz-bg.jpg") center center/cover no-repeat;
   color: #fff;
 }
 .quiz__inner.final {
@@ -2108,4 +2108,106 @@ b {
   font-size: 2rem;
   line-height: 2.7rem;
   cursor: pointer;
+}
+
+.benefits {
+  padding: 5rem 0 6rem;
+}
+.benefits__head {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13rem;
+  margin-bottom: 5.8rem;
+  padding-left: 7rem;
+}
+.benefits__label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 21.2rem;
+          flex: 0 0 21.2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #68686b;
+}
+.benefits__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 74rem;
+          flex: 0 0 74rem;
+  border-radius: 1.5rem;
+  padding: 7.3rem 15.7rem 8rem 7.1rem;
+  background-color: #fff;
+}
+.benefits__item {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  color: #16161c;
+}
+.benefits__item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.benefits__number {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #30BF58;
+}
+.benefits__name {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #16161c;
+}
+.benefits__descr {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #8d8d8d;
+}
+.benefits__descr:not(:last-child) {
+  margin-bottom: 3.3rem;
+}
+.benefits__tabs {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.benefits__tab {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 6rem 5.5rem;
+  min-height: 22.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.2rem solid #2d2d33;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 3.4rem;
+  text-align: center;
+  color: #8d8d8d;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.benefits__tab.active {
+  background-color: #30BF58;
+  font-weight: 700;
+  color: #fff;
 }

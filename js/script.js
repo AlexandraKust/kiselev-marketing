@@ -167,20 +167,23 @@ jQuery.validator.addMethod("checkMaskPhone", function (value, element) {
 });
 
 // tabs
-// document.querySelectorAll('.catalog__tab').forEach(function (tabsBtn) {
-// 	tabsBtn.addEventListener('click', function (e) {
-// 		const path = e.currentTarget.dataset.path;
-// 		document.querySelectorAll('.catalog__tab').forEach(function (btn) {
-// 			btn.classList.remove('active')
-// 		});
-// 		e.currentTarget.classList.add('active');
-// 		document.querySelectorAll('.catalog__list').forEach(function (tabsBtn) {
-// 			tabsBtn.classList.remove('active')
-// 		});
-// 		document.querySelector(`[data-target="${path}"]`).classList.add('active');
-// 	});
-// });
-
+document.querySelectorAll('.benefits__tab').forEach(function (tabsBtn) {
+	tabsBtn.addEventListener('click', function (e) {
+		const path = e.currentTarget.dataset.tab;
+		document.querySelectorAll('.benefits__tab').forEach(function (btn) {
+			btn.classList.remove('active')
+		});
+		e.currentTarget.classList.add('active');
+		document.querySelectorAll('.benefits__item').forEach(function (tabsBtn) {
+			tabsBtn.classList.remove('active')
+		});
+		document.querySelector(`[data-benefits="${path}"]`).classList.add('active');
+	});
+});
+let benefitsNumber = document.querySelectorAll('.benefits__number');
+for (let i = 0; i < benefitsNumber.length; i++) {
+	benefitsNumber[i].innerHTML = '0' + (i + 1);
+}
 
 // каталог
 // let catalogItems = document.querySelectorAll('.catalog-item');
