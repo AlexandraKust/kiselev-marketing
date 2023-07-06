@@ -1,5 +1,5 @@
 .solution {
-	padding: 8.2rem 0;
+	padding: 8.4rem 0;
 
 	&__row {
 		align-items: start;
@@ -13,12 +13,6 @@
 
 	&__title {
 		margin-bottom: 7rem;
-		line-height: 7.4rem;
-
-		.section-title__up {
-			display: inline-block;
-			margin-bottom: 5.3rem;
-		}
 	}
 
 	&__descr {
@@ -115,29 +109,72 @@
 
 @media (max-width: 768px) {
 	.solution {
+		padding: 1.9rem 0 2.2rem;
 
-		&__row {}
+		&__row {
+			flex-direction: column;
+		}
 
-		&__text {}
+		&__text {
+			flex-basis: auto;
+			padding: 0;
+		}
 
-		&__title {}
+		&__title {
+			margin-bottom: 3.4rem;
+		}
 
-		&__descr {}
+		&__descr {
+			margin-bottom: 3.2rem;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+		}
 
-		&__cross {}
+		&__sibtitle {
+			margin-bottom: 1.6rem;
+			font-size: 2rem;
+			line-height: 3.2rem;
+		}
 
-		&__sibtitle {}
+		&__list {
+			column-gap: 0;
+			row-gap: 1.6rem;
+			justify-content: space-between;
+			margin-bottom: 3.2rem;
+		}
 
-		&__list {}
+		&__item {
+			flex-basis: 13.2rem;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
 
-		&__item {}
+		&__video {
+			display: block;
+			flex-basis: auto;
+			width: 100%;
+			height: 28rem;
+			overflow: hidden;
+		}
 
-		&__video {}
+		&__play {
+			left: 2rem;
+			top: 2rem;
+			width: 5rem;
+			height: 5rem;
 
-		&__img {}
+			img {
+				width: 0.7rem;
+				height: 0.8rem;
+			}
+		}
 
-		&__play {}
-
-		&__label {}
+		&__label {
+			left: 2rem;
+			bottom: 2rem;
+			width: 21rem;
+			font-size: 1.6rem;
+			line-height: 2rem;
+		}
 	}
 }

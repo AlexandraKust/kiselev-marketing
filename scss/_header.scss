@@ -90,6 +90,10 @@
 		}
 	}
 
+	&__whatsapp.mobile {
+		display: none;
+	}
+
 	&__write {
 		flex: 0 0 10rem;
 		width: 10rem;
@@ -224,6 +228,8 @@
 		background-color: $main-color;
 		min-height: fit-content;
 		height: 100vh;
+		max-height: 100vh;
+		padding-bottom: 0;
 		overflow-y: auto;
 		-ms-overflow-style: none;
 		scrollbar-width: none;
@@ -259,7 +265,8 @@
 	}
 
 	&__row {
-		padding: 15rem 0 10rem;
+		// padding: 15rem 0 10rem;
+		padding: 3rem 0 2rem;
 		gap: 16.3rem;
 		align-items: center;
 		flex: 1 1 auto;
@@ -281,44 +288,131 @@
 
 @media (max-width: 768px) {
 	.header {
+		padding: 1.9rem 0;
 
-		&__row {}
+		&__info {
+			margin-right: 1.9rem;
+		}
 
-		&__info {}
+		&__logo {
+			flex-basis: 7.5rem;
+			width: 7.5rem;
+		}
 
-		&__logo {}
+		&__grade {
+			width: 100%;
+			height: 0;
+			overflow: hidden;
+			order: 6;
+			opacity: 0;
+			transition: opacity 0.8s ease;
+		}
 
-		&__descr {}
+		&__text {
+			font-size: 1.2rem;
+			line-height: 1.7rem;
+		}
 
-		&__grade {}
+		&__social {
+			height: 0;
+			overflow: hidden;
+			width: 100%;
+			order: 7;
+			opacity: 0;
+			transition: opacity 0.8s ease;
+		}
 
-		&__rating {}
+		&__whatsapp.mobile {
+			display: flex;
+			flex: 0 0 3rem;
+			width: 3rem;
+			height: 3rem;
+			border-radius: 0.8rem;
 
-		&__text {}
+			img {
+				width: 1.4rem;
+				height: 1.3rem;
+			}
+		}
 
-		&__social {}
+		&__write {
+			font-size: 1.2rem;
+			line-height: 1.7rem;
+		}
 
-		&__whatsapp {}
+		&__call {
+			margin-left: 1.9rem;
+			margin-right: 1rem;
+		}
 
-		&__write {}
+		&__number {
+			font-size: 1.2rem;
 
-		&__call {}
+			&::after {
+				height: 0.1rem;
+			}
+		}
 
-		&__number {}
+		&__callback {
+			font-size: 1rem;
+			line-height: 1.4rem;
+		}
 
-		&__callback {}
+		&__burger {
+			flex: 0 0 1.6rem;
+			width: 1.6rem;
+			height: 0.7rem;
 
-		&__burger {}
+			span {
+				height: 0.2rem;
 
-		&__nav {}
+				&:last-child {
+					width: 1.2rem;
+				}
+			}
+
+			&.active span:last-child {
+				bottom: 21%;
+			}
+		}
+
+		&.active {
+
+			.header__grade,
+			.header__social {
+				height: auto;
+				opacity: 1;
+			}
+
+			.header__grade {
+				margin-bottom: 2rem;
+			}
+
+			.header__bottom {
+				display: none;
+			}
+		}
 	}
 
 	.nav {
 
-		&__list {}
+		&__row {
+			padding: 4rem 0;
+			gap: 1.6rem;
+			flex-direction: column;
+			align-items: start;
+			justify-content: center;
+		}
 
-		&__item {}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			gap: 1.6rem;
+		}
 
-		&__link {}
+		&__link {
+			font-size: 2rem;
+			line-height: 2rem;
+		}
 	}
 }

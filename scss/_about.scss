@@ -1,0 +1,156 @@
+.about {
+	padding: 9.7rem 0 23.8rem;
+	background: url('../media/img/dark-bg-rotate.jpg') 0 0 / 100% auto no-repeat;
+
+	&__title {
+		margin-bottom: 6.5rem;
+		padding-left: 7rem;
+		text-align: center;
+	}
+
+	&__row {
+		justify-content: center;
+		gap: 15.4rem;
+	}
+
+	&__item {
+		position: relative;
+		flex: 0 0 min-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 15.1rem;
+			height: 15.1rem;
+			border-radius: 50%;
+			background-color: currentColor;
+			filter: blur(8.7rem);
+		}
+
+		&:first-child {
+			flex-basis: 26.2rem;
+			color: $accent-color;
+
+			.about__number span:first-child {
+				width: 22.3rem;
+			}
+		}
+
+		&:nth-child(2) {
+			color: #9da5ee;
+		}
+
+		&:last-child {
+			color: #53c7e5;
+		}
+	}
+
+	&__number {
+		position: relative;
+		z-index: 2;
+		flex-shrink: 0;
+		width: fit-content;
+		font-size: 6.4rem;
+		line-height: 8rem;
+		text-align: center;
+		letter-spacing: -0.05em;
+		display: flex;
+		align-items: baseline;
+		color: #fff;
+
+		span {
+			width: max-content;
+			font-weight: 500;
+			font-size: 12.8rem;
+			line-height: 16.1rem;
+			letter-spacing: -0.05em;
+			white-space: nowrap;
+
+			&:first-child {
+				width: 15rem;
+			}
+		}
+	}
+
+	&__descr {
+		position: relative;
+		z-index: 2;
+		margin-top: -0.7rem;
+		font-size: 1.8rem;
+		line-height: 2.3rem;
+		text-align: center;
+		color: #fff;
+	}
+}
+
+@media (max-width: 768px) {
+	.about {
+		padding: 3rem 0 16.6rem;
+
+		&__title {
+			padding: 0;
+			margin-bottom: 4.5rem;
+		}
+
+		&__row {
+			flex-wrap: wrap;
+			column-gap: 5rem;
+			row-gap: 2.7rem;
+		}
+
+		&__item {
+			&::after {
+				width: 8.5rem;
+				height: 8.5rem;
+				filter: blur(5rem);
+			}
+
+			&:first-child {
+				flex-basis: 13rem;
+				order: 1;
+
+				.about__number span:first-child {
+					width: 9.4rem;
+				}
+			}
+
+			&:nth-child(2) {
+				order: 3;
+			}
+
+			&:last-child {
+				width: 100%;
+				order: 2;
+			}
+		}
+
+		&__number {
+			margin-bottom: 0.8rem;
+			font-size: 3.2rem;
+			line-height: 5rem;
+
+			span {
+				font-size: 5rem;
+				line-height: 5.4rem;
+
+				&:first-child {
+					width: 6.2rem;
+				}
+			}
+		}
+
+		&__descr {
+			margin: 0;
+			font-size: 1rem;
+			line-height: 125%;
+		}
+	}
+
+}

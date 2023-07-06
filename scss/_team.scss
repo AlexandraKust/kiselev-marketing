@@ -1,0 +1,319 @@
+.team {
+	position: relative;
+	overflow: hidden;
+	margin-top: -0.1rem;
+	padding: 7.1rem 0 16.3rem;
+	background: url('../media/img/light-bg.jpg') 0 0 / 100% 100% no-repeat;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0.7rem;
+		width: 100%;
+		height: 40.4rem;
+		background: url('../media/svg/our-team.svg') 0 0 / 100% 100% no-repeat;
+	}
+
+	&__title {
+		margin-bottom: 10.9rem;
+		letter-spacing: -0.006em;
+		color: $main-color;
+		text-align: center;
+	}
+
+	&__sliders {
+		position: relative;
+	}
+
+	&__btns {
+		position: absolute;
+		z-index: 5;
+		right: -2.6rem;
+		bottom: 10rem;
+		width: 103.3rem;
+	}
+
+	&__slide {
+		gap: 9.3rem;
+		opacity: 0 !important;
+
+		&.swiper-slide-active {
+			opacity: 1 !important;
+		}
+	}
+
+	&__img {
+		position: relative;
+		margin-top: 1.2rem;
+		flex: 0 0 57rem;
+		height: 90rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: end;
+
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__info {
+		padding: 2.4rem;
+		border-radius: 1.5rem;
+	}
+
+	&__name {
+		margin-bottom: 0.8rem;
+		padding: 1.2rem 2rem;
+		border-radius: 1.2rem;
+		background-color: $accent-color;
+		font-weight: 500;
+		font-size: 2.6rem;
+		line-height: 3.2rem;
+		color: #fff;
+		text-align: center;
+	}
+
+	&__job {
+		text-align: center;
+		font-size: 2rem;
+		line-height: 3.2rem;
+		color: #6d6d6d;
+	}
+
+	&__text {
+		height: 70rem;
+		display: flex;
+		flex-direction: column;
+		color: $main-color;
+	}
+
+	&__headline {
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+		font-size: 6.4rem;
+		line-height: 8rem;
+	}
+
+	&__keys {
+		font-size: 3.2rem;
+		line-height: 4rem;
+	}
+
+	&__wrap {
+		display: flex;
+		flex: 1 1 auto;
+		align-items: center;
+
+	}
+
+	&__list {
+		flex-wrap: wrap;
+		row-gap: 4rem;
+		column-gap: 11.3rem;
+	}
+
+	&__competence {
+		flex: 0 0 40rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.7rem;
+		counter-increment: num;
+
+		&::before {
+			content: counter(num);
+			font-weight: 700;
+			font-size: 2.4rem;
+			line-height: 3.4rem;
+			color: $accent-color;
+		}
+
+		&:nth-child(-n+9):before {
+			content: "0" counter(num);
+		}
+	}
+
+	&__key {
+		font-weight: 700;
+		font-size: 3.6rem;
+		line-height: 3.4rem;
+		color: #000;
+	}
+
+	&__descr {
+		font-size: 2.4rem;
+		line-height: 3.4rem;
+	}
+
+	&__members {
+		position: absolute;
+		z-index: 2;
+		right: -2.6rem;
+		bottom: -2.5rem;
+		width: 103.3rem;
+		padding: 2.5rem;
+	}
+
+	&__member {
+		width: 20rem;
+		height: 20rem;
+		border-radius: 1.5rem;
+		border: 0.1rem solid transparent;
+		background-color: #fff;
+		overflow: hidden;
+		transition-property: box-shadow, border-color;
+		transition: 0.3s ease-in-out;
+
+		&:not(:last-child) {
+			margin-right: 6.1rem;
+		}
+
+		&.swiper-slide-thumb-active {
+			border-color: $accent-color;
+			box-shadow: 0 0 2rem 0 rgba(48, 191, 88, 0.6);
+		}
+
+	}
+
+	.slider-btn {
+		top: 50%;
+		transform: translate(0, -50%);
+
+		&.swiper-button-disabled {
+			background: #cbcbcb;
+
+			path {
+				fill: #fff;
+			}
+		}
+	}
+}
+
+@media (max-width:768px) {
+	.team {
+		padding: 3.3rem 0 3.6rem;
+
+		&::before {
+			top: 0rem;
+			height: 6.6rem;
+		}
+
+		&__title {
+			letter-spacing: 0.04em;
+			margin-bottom: 2.8rem;
+			text-align: left;
+
+			span.br {
+				display: block;
+				height: 1.2rem;
+			}
+		}
+
+		&__btns {
+			width: calc(100% + 3rem);
+			bottom: auto;
+			top: 16.8rem;
+			right: -1.5rem;
+
+		}
+
+		&__slide {
+			flex-direction: column;
+			gap: 5rem;
+		}
+
+		&__img {
+			flex-basis: auto;
+			width: 22.3rem;
+			height: 32.6rem;
+			margin: 0 auto;
+			overflow: hidden;
+
+			img {
+				height: 108%;
+			}
+		}
+
+		&__info {
+			position: relative;
+			padding: 1.2rem;
+			overflow: hidden;
+			background: rgba(255, 255, 255, 0.10);
+			backdrop-filter: blur(0.2rem);
+		}
+
+		&__name {
+			margin-bottom: 0.4rem;
+			padding: 1rem 1.6rem;
+			border-radius: 0.8rem;
+			font-size: 1.6rem;
+			line-height: 1.6rem;
+		}
+
+		&__job {
+			font-size: 1rem;
+			line-height: 1.6rem;
+		}
+
+		&__text {
+			height: auto;
+		}
+
+		&__headline {
+			margin-bottom: 0.8rem;
+			font-size: 2.4rem;
+			line-height: 3rem;
+		}
+
+		&__keys {
+			margin-bottom: 2.8rem;
+			font-size: 1.4rem;
+			line-height: 1.8rem;
+		}
+
+		&__list {
+			gap: 2rem;
+		}
+
+		&__competence {
+			flex-basis: 100%;
+			gap: 0.8rem;
+
+			&::before {
+				font-size: 1.4rem;
+				line-height: 1.4rem;
+			}
+		}
+
+		&__key {
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+		}
+
+		&__descr {
+			font-size: 1.4rem;
+			line-height: 2rem;
+		}
+
+		&__pagination.swiper-pagination {
+			top: 34.2rem;
+			bottom: auto;
+			justify-content: center;
+
+			& .swiper-pagination-bullet {
+				background: #cbcbcb;
+
+				path {
+					fill: #fff;
+				}
+			}
+		}
+	}
+}

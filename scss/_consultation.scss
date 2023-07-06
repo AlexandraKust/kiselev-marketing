@@ -1,0 +1,190 @@
+.consultation {
+	margin-top: -13.4rem;
+	padding-bottom: 5.2rem;
+
+	&__row {
+		position: relative;
+		padding: 8.5rem 10.5rem;
+		border-radius: 1.5rem;
+		overflow: hidden;
+		justify-content: space-between;
+		background: url('../media/img/manager-consultation.png') center bottom / auto 100% no-repeat,
+			url('../media/img/consultation-bg.jpg') 0 0 / 100% 100% no-repeat;
+	}
+
+	&__title {
+		flex: 0 1 47.4rem;
+		padding-top: 1rem;
+		line-height: 8rem;
+	}
+
+	&__form {
+		flex: 0 0 40rem;
+	}
+
+	&__subtitle {
+		margin-bottom: 2.7rem;
+		padding: 0 2rem;
+		font-weight: 500;
+		font-size: 3rem;
+		line-height: 4rem;
+		text-align: center;
+	}
+
+	&__input {
+		margin-bottom: 2rem;
+	}
+
+	&__btn {
+		width: 100%;
+		margin-bottom: 2.2rem;
+		padding: 3.8rem;
+		font-size: 1.8rem;
+	}
+
+	&__agree {
+		margin-bottom: 4.8rem;
+		justify-content: center;
+	}
+
+	&__bottom {
+		align-items: center;
+		justify-content: center;
+		gap: 1.3rem;
+	}
+
+	&__wa {
+		flex: 0 0 4rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 1.3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+
+		img {
+			width: 1.8rem;
+			height: 1.8rem;
+		}
+	}
+
+	&__write {
+		flex: 0 1 23.4rem;
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+	}
+
+	&__plate {
+		position: absolute;
+		left: 44.8rem;
+		bottom: 11rem;
+		width: min-content;
+	}
+
+	&__name {
+		margin-bottom: 2rem;
+		font-weight: 500;
+		font-size: 2.4rem;
+		line-height: 3rem;
+	}
+
+	&__job {
+		min-width: 14.4rem;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		color: $gray-1;
+	}
+}
+
+@media (max-width: 768px) {
+	.consultation {
+		margin-top: -10.3rem;
+		padding-bottom: 2.2rem;
+
+		&__row {
+			padding: 2.5rem 2rem 34.4rem;
+			flex-direction: column;
+			background: url('../media/img/manager-consultation-mobile.png') center bottom / 100% auto no-repeat,
+				url('../media/img/consultation-bg.jpg') center 0 / auto 100% no-repeat;
+		}
+
+		&__title {
+			flex-basis: auto;
+			width: 100%;
+			padding-top: 0;
+			margin-bottom: 3.2rem;
+			line-height: 3.2rem;
+		}
+
+		&__form {
+			flex-basis: auto;
+			width: 100%;
+		}
+
+		&__subtitle {
+			margin-bottom: 2rem;
+			padding: 0 2.3rem 0 0;
+			font-size: 2rem;
+			line-height: 2.6rem;
+			text-align: left;
+		}
+
+		&__input {
+			margin-bottom: 1.2rem;
+		}
+
+		&__btn {
+			margin-bottom: 0.7rem;
+			padding: 2.45rem;
+			font-size: 1.2rem;
+			line-height: 1.5rem;
+		}
+
+		&__agree {
+			margin-bottom: 1.6rem;
+
+			.agree__text {
+				max-width: 15.5rem;
+			}
+		}
+
+		&__bottom {
+			gap: 1.2rem;
+		}
+
+		&__wa {
+			flex-basis: 2.8rem;
+			width: 2.8rem;
+			height: 2.8rem;
+			border-radius: 0.6rem;
+
+			img {
+				width: 1.3rem;
+				height: 1.3rem;
+			}
+		}
+
+		&__write {
+			flex-basis: auto;
+			font-size: 1.2rem;
+		}
+
+		&__plate {
+			left: 2rem;
+			bottom: 8rem;
+		}
+
+		&__name {
+			margin-bottom: 1rem;
+			font-size: 1.6rem;
+			line-height: 2rem;
+		}
+
+		&__job {
+			font-size: 1.2rem;
+			line-height: 1.8rem;
+			min-width: 9.2rem;
+		}
+	}
+}

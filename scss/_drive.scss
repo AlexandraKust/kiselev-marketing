@@ -1,0 +1,428 @@
+.drive {
+	position: relative;
+	padding: 10.4rem 0 7.3rem;
+	overflow: hidden;
+	background: url('../media/img/dark-bg.jpg') 0 0 / 100% auto no-repeat;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 8.4rem;
+		right: 10rem;
+		width: 132.6rem;
+		height: 31rem;
+		background: url('../media/svg/test-drive.svg') 0 0 / 100% 100% no-repeat;
+	}
+
+	&__check {
+		margin-bottom: 5.2rem;
+		padding-left: 7.1rem;
+
+		img {
+			margin-bottom: 3.7rem;
+			width: 6.5rem;
+			height: 6.5rem;
+		}
+
+		p {
+			font-weight: 700;
+			font-size: 2.4rem;
+			line-height: 3.4rem;
+			text-transform: uppercase;
+		}
+	}
+
+	&__body {
+		position: relative;
+		z-index: 2;
+		padding: 6.5rem 10.1rem 16.2rem 11rem;
+		justify-content: space-between;
+		border-radius: 1.5rem;
+		background: url('../media/img/drive-man.png') center bottom / auto 100% no-repeat,
+			url('../media/img/drive-bg.jpg') center center / cover no-repeat;
+	}
+
+	&__plate {
+		position: absolute;
+		top: 40rem;
+		left: 62.5rem;
+	}
+
+	&__name {
+		width: min-content;
+		margin-bottom: 1.5rem;
+		font-weight: 500;
+		font-size: 2.4rem;
+		line-height: 3rem;
+		color: #fff;
+	}
+
+	&__job {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		color: $gray-1;
+	}
+
+	&__text {
+		flex: 0 0 49.6rem;
+	}
+
+	&__title {
+		margin-bottom: 3.6rem;
+		line-height: 8rem;
+	}
+
+	&__subtitle {
+		margin-bottom: 1.9rem;
+		font-weight: 500;
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+
+	&__list {
+		margin-bottom: 4.3rem;
+	}
+
+	&__item {
+		flex: 0 1 19rem;
+		font-size: 2rem;
+		line-height: 2.7rem;
+	}
+
+	&__warranty {
+		font-weight: 700;
+		font-size: 2.4rem;
+		line-height: 3rem;
+	}
+
+	&__form {
+		flex: 0 0 40rem;
+		padding-top: 0.9rem;
+
+		.drive__subtitle {
+			padding: 0 2rem;
+			margin-bottom: 2.4rem;
+			text-align: center;
+		}
+	}
+
+	&__input {
+		margin-bottom: 2rem;
+	}
+
+	&__btn {
+		width: 100%;
+		margin-bottom: 2.2rem;
+		font-size: 1.8rem;
+		line-height: 2.3rem;
+
+		.main-btn__text {
+			width: 22.5rem;
+		}
+	}
+
+	&__agree {
+		margin-bottom: 9rem;
+		justify-content: center;
+	}
+
+	&__now {
+		align-items: center;
+		justify-content: center;
+		gap: 1.3rem;
+	}
+
+	&__wa {
+		flex: 0 0 4rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 1.3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+
+		img {
+			width: 1.7rem;
+			height: 1.7rem;
+		}
+	}
+
+	&__write {
+		flex: 0 1 13.8rem;
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+	}
+
+	&__feedback {
+		position: relative;
+		z-index: 3;
+		margin: -10rem auto 0 auto;
+		width: 87%;
+		padding: 4.3rem 7rem;
+		border-radius: 1.5rem;
+		background: linear-gradient(0deg, #222228, #222228),
+			linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+
+	}
+
+	.slider-btn {
+		top: 50%;
+
+		&--prev {
+			transform: translate(-50%, -50%);
+		}
+
+		&--next {
+			transform: translate(50%, -50%);
+		}
+	}
+}
+
+.drive-slide {
+	align-items: center;
+	gap: 6.6rem;
+	justify-content: space-between;
+
+	&:not(:last-child) {
+		margin-right: 7rem;
+	}
+
+	&__title {
+		flex: 0 0 32.3rem;
+		font-weight: 500;
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		font-size: 2rem;
+		line-height: 3rem;
+		color: $gray-1;
+	}
+
+	&__data {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		margin-bottom: 3rem;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 2.6rem;
+			height: 2.1rem;
+			background: url('../media/svg/quote.svg') 0 0 / 100% 100% no-repeat;
+		}
+	}
+
+	&__btn {
+		flex: 0 0 fit-content;
+	}
+}
+
+@media (max-width:768px) {
+	.drive {
+		padding: 2.2rem 0;
+		margin-left: 1.3rem;
+
+		.container {
+			padding: 0 1.8rem 0 1.3rem;
+		}
+
+		&::after {
+			top: 10.8rem;
+			right: -2.2em;
+			width: 28.8rem;
+			height: 6.6rem;
+		}
+
+		&__check {
+			margin-bottom: 5.3rem;
+			padding: 0;
+
+			img {
+				margin-bottom: 1.2rem;
+				width: 3.7rem;
+				height: 3.7rem;
+			}
+
+			p {
+				font-size: 1.4rem;
+				line-height: 1.8rem;
+			}
+		}
+
+		&__body {
+			padding: 2rem;
+			padding-bottom: 30rem;
+			flex-direction: column;
+			background: url('../media/img/drive-man.png') 54% bottom / auto 29rem no-repeat,
+				url('../media/img/drive-bg.jpg') center center / cover no-repeat;
+
+		}
+
+		&__plate {
+			top: auto;
+			left: 2rem;
+			bottom: 8.7rem;
+		}
+
+		&__name {
+			margin-bottom: 0.5rem;
+			font-size: 1.6rem;
+			line-height: 2rem;
+		}
+
+		&__job {
+			font-size: 1.2rem;
+			line-height: 2.4rem;
+		}
+
+		&__text {
+			flex-basis: auto;
+			width: 100%;
+		}
+
+		&__title {
+			margin-bottom: 2.4rem;
+			line-height: 3.2rem;
+		}
+
+		&__subtitle {
+			margin-bottom: 1.2rem;
+			font-size: 2rem;
+			line-height: 2.4rem;
+		}
+
+		&__list {
+			margin-bottom: 2.4rem;
+			justify-content: space-between;
+		}
+
+		&__item {
+			flex-basis: 10rem;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
+
+		&__warranty {
+			margin-bottom: 2.4rem;
+			font-size: 1.4rem;
+			line-height: 2rem;
+		}
+
+		&__form {
+			flex-basis: auto;
+			width: 100%;
+			padding-top: 0;
+
+			.drive__subtitle {
+				padding: 0 2.3rem 0 0;
+				margin-bottom: 2.1rem;
+				text-align: left;
+				line-height: 2.6rem;
+			}
+		}
+
+		&__input {
+			margin-bottom: 1.2rem;
+		}
+
+		&__btn {
+			margin-bottom: 0.7rem;
+			font-size: 1.2rem;
+			line-height: 1.5rem;
+			padding: 1.7rem;
+
+			.main-btn__text {
+				width: 14.5rem;
+			}
+		}
+
+		&__agree {
+			max-width: 18.4rem;
+			margin: 0 auto 2rem;
+		}
+
+		&__now {
+			gap: 1.2rem;
+		}
+
+		&__wa {
+			flex-basis: 2.8rem;
+			width: 2.8rem;
+			height: 2.8rem;
+			border-radius: 0.6rem;
+
+			img {
+				width: 1.2rem;
+				height: 1.2rem;
+			}
+		}
+
+		&__write {
+			flex-basis: 13.8rem;
+			font-size: 1.2rem;
+		}
+
+		&__feedback {
+			width: 90%;
+			margin-top: -3.6rem;
+			padding: 1.5rem 1.5rem 1.8rem;
+			border: 0.2rem solid rgba($color: #fff, $alpha: 0.05)
+		}
+
+		.slider-btn {
+			&--next {
+				transform: translate(76%, -50%);
+			}
+
+			&--prev {
+				transform: translate(-78%, -50%);
+			}
+		}
+	}
+
+	.drive-slide {
+		flex-direction: column;
+		align-items: start;
+		gap: 2rem;
+
+		&:not(:last-child) {
+			margin-right: 3.3rem;
+		}
+
+		&__title {
+			flex-basis: auto;
+			width: 100%;
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+		}
+
+		&__content {
+			width: 100%;
+			font-size: 1.4rem;
+			line-height: 1.8rem;
+		}
+
+		&__data {
+			margin-bottom: 1.4rem;
+
+			&::before {
+				width: 1.7rem;
+				height: 1.4rem;
+			}
+		}
+
+		&__comment {
+			margin-bottom: 0.2rem;
+		}
+
+		&__btn {
+			flex-basis: auto;
+			width: 100%;
+		}
+	}
+}

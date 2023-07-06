@@ -1,10 +1,10 @@
 .benefits {
-	padding: 5rem 0 6rem;
+	padding: 6.4rem 0 6rem;
 
 	&__head {
 		align-items: center;
 		gap: 13rem;
-		margin-bottom: 5.8rem;
+		margin-bottom: 7.1rem;
 		padding-left: 7rem;
 	}
 
@@ -65,13 +65,15 @@
 	}
 
 	&__tab {
+		position: relative;
 		flex: 0 0 50%;
 		padding: 6rem 5.5rem;
 		min-height: 22.5rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 0.2rem solid #2d2d33;
+		outline: 0.2rem solid #2d2d33;
+		outline-offset: -0.1rem;
 		border-radius: 1.5rem;
 		font-weight: 500;
 		font-size: 2.7rem;
@@ -79,9 +81,19 @@
 		text-align: center;
 		color: $gray-1;
 		transition: 0.3s ease;
+		cursor: pointer;
+
+		&:not(.active):hover {
+			z-index: 2;
+			color: $accent-color;
+			outline-color: $accent-color;
+			box-shadow: inset 0 0 2rem 1rem rgba(0, 0, 0, 0.2);
+		}
 
 		&.active {
+			z-index: 2;
 			background-color: $accent-color;
+			outline-color: $accent-color;
 			font-weight: 700;
 			color: #fff;
 		}
@@ -90,27 +102,64 @@
 
 @media (max-width: 768px) {
 	.benefits {
+		padding: 2.2rem 0 4.4rem;
 
-		&__head {}
+		&__head {
+			flex-direction: column;
+			align-items: start;
+			gap: 2.7rem;
+			margin-bottom: 2.4rem;
+			padding: 0;
+		}
 
-		&__title {}
+		&__title .accent {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
 
-		&__label {}
+		&__label {
+			flex-basis: auto;
+			max-width: 20.7rem;
+		}
 
-		&__row {}
+		&__row {
+			flex-direction: column-reverse;
+		}
 
-		&__content {}
+		&__content {
+			flex-basis: auto;
+			width: 100%;
+			padding: 1.5rem 2rem 2.3rem;
+		}
 
-		&__item {}
+		&__number {
+			flex: 0 0 auto;
+			margin-bottom: 2.5rem;
+			font-size: 2rem;
+			line-height: 2.5rem;
+		}
 
-		&__number {}
+		&__name {
+			margin-bottom: 1.2rem;
+			font-size: 2rem;
+			line-height: 2.5rem;
+		}
 
-		&__name {}
+		&__descr {
+			font-size: 1.4rem;
+			line-height: 2rem;
 
-		&__descr {}
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+		}
 
-		&__tabs {}
-
-		&__tab {}
+		&__tab {
+			height: 9.4rem;
+			padding: 1rem;
+			min-height: auto;
+			font-size: 1.4rem;
+			line-height: 1.8rem;
+		}
 	}
 }

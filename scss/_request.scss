@@ -1,0 +1,284 @@
+.request {
+	padding: 16rem 0 14.6rem;
+	background: url('../media/img/dark-bg.jpg') 0 0 / 100% auto no-repeat;
+
+	&__head {
+		margin-bottom: 3.9rem;
+		justify-content: space-between;
+		padding: 0 7.1rem;
+	}
+
+	&__title {
+		width: 94rem;
+	}
+
+	&__info {
+		flex: 0 0 40rem;
+		margin-top: -1.6rem;
+	}
+
+	&__descr {
+		margin-bottom: 5rem;
+		text-align: center;
+		font-size: 2.2rem;
+		line-height: 3.2rem;
+		color: #68686b;
+	}
+
+	&__btn {
+		width: 100%;
+		padding: 4.5rem;
+	}
+
+	&__swiper {
+		position: relative;
+		margin: 0 -2.5rem;
+		padding: 2.5rem 2.5rem 7.8rem;
+	}
+
+	&__slide {
+		position: relative;
+		width: 78rem;
+		height: 50rem;
+		border-radius: 1.5rem;
+		overflow: hidden;
+		transition: box-shadow 0.3s ease-in-out;
+
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		&:not(:last-child) {
+			margin-right: 8.5rem;
+		}
+
+		&:hover {
+			box-shadow: 0 0 2rem 0 rgba(48, 191, 88, 0.6);
+
+			.request__zoom {
+				animation: zoom 0.8s infinite alternate linear;
+			}
+		}
+
+		&:nth-child(odd) .request__text::before {
+			background-color: $accent-color;
+		}
+
+		&:nth-child(even) .request__text::before {
+			background-color: #bf7d30;
+		}
+	}
+
+	&__zoom {
+		position: absolute;
+		z-index: 4;
+		top: 4.1rem;
+		right: 4.3rem;
+		width: 7.5rem;
+		height: 7.5rem;
+		border-radius: 50%;
+		background-color: $accent-color;
+		transition: box-shadow 0.3s ease-in-out;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 3rem;
+			height: 3rem;
+			transform: translate(-50%, -50%);
+			background: url('../media/svg/zoom.svg') 0 0 / 100% 100% no-repeat;
+		}
+
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0 0 2rem 0 rgba(255, 255, 255, 0.6);
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__text {
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		text-align: center;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		color: #fff;
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 15rem;
+			height: 15rem;
+			border-radius: 50%;
+			filter: blur(8.7rem);
+		}
+	}
+
+	&__name {
+		width: min-content;
+		font-weight: 700;
+		font-size: 4.8rem;
+		line-height: 100%;
+		text-align: center;
+	}
+
+	&__bottom {
+		position: absolute;
+		z-index: 4;
+		left: 16.2rem;
+		right: 16.2rem;
+		bottom: 4.9rem;
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		text-align: center;
+	}
+
+	&__pagintaion.swiper-pagination {
+		bottom: 0;
+	}
+
+	.slider-btn {
+		top: 50%;
+		transform: translate(0, calc(-50% - 3.8rem));
+	}
+}
+
+@media (max-width: 768px) {
+	.request {
+		padding: 5.6rem 0 3rem;
+		background: url('../media/img/dark-bg-mobile.jpg') 0 bottom / 100% 100% no-repeat;
+
+		&__head {
+			margin-bottom: 1.6rem;
+			flex-direction: column;
+			padding: 0;
+			gap: 2rem;
+		}
+
+		&__title {
+			width: 100%;
+			letter-spacing: -0.01em;
+
+			.section-title__up {
+				letter-spacing: 0;
+			}
+
+			.mobile {
+				display: inline;
+			}
+
+			.stroke {
+				display: inline-block;
+				margin-right: 5rem;
+			}
+		}
+
+		&__info {
+			flex-basis: auto;
+			width: 100%;
+			margin: 0;
+		}
+
+		&__descr {
+			margin-bottom: 2.1rem;
+			text-align: left;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
+
+		&__btn {
+			padding: 2.8rem;
+		}
+
+		&__swiper {
+			margin: 0 -1.6rem;
+			padding: 1.6rem 1.6rem 4.2rem;
+		}
+
+		&__slide {
+			width: 100%;
+			height: 22.7rem;
+
+			&:not(:last-child) {
+				margin-right: 2.2rem;
+			}
+
+			&:hover {
+				box-shadow: 0 0 1.5rem 0 rgba(48, 191, 88, 0.6);
+			}
+		}
+
+		&__zoom {
+			right: 1.3rem;
+			top: 1.3rem;
+			width: 4rem;
+			height: 4rem;
+
+			&::before {
+				width: 1.6rem;
+				height: 1.6rem;
+			}
+
+			&:hover {
+				box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.6);
+			}
+		}
+
+		&__text {
+			gap: 0.8rem;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+			padding-bottom: 2rem;
+
+			&::before {
+				width: 10rem;
+				height: 10rem;
+				filter: blur(5rem);
+			}
+		}
+
+		&__name {
+			font-size: 2.4rem;
+		}
+
+		&__bottom {
+			left: 1.3rem;
+			right: 1.3rem;
+			bottom: 1.3rem;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
+
+		.slider-btn {
+			top: 50%;
+			transform: translate(0, calc(-50% - 1.1rem));
+		}
+	}
+}

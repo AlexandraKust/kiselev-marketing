@@ -58,7 +58,8 @@
 		position: absolute;
 		right: 50rem;
 		bottom: 20.6rem;
-		width: 10.5rem;
+		// width: 10.5rem;
+		width: min-content;
 	}
 
 	&__name {
@@ -114,26 +115,94 @@
 
 @media (max-width: 768px) {
 	.hero {
+		padding: 8.6rem 0 3.4rem;
+		background-image: url('../media/img/hero-bg-mobile.jpg');
 
-		&__row {}
+		&__title {
+			margin-bottom: 3.2rem;
+			font-size: 2rem;
+			line-height: 2.8rem;
 
-		&__title {}
+			&--big {
+				display: block;
+				margin-bottom: 0.7rem;
+				font-size: 4.6rem;
+				line-height: 5.6rem;
+			}
 
-		&__switch {}
+			&--middle {
+				padding-bottom: 0.8rem;
+				font-size: 3.2rem;
+				line-height: 3.6rem;
+			}
+		}
 
-		&__subtitle {}
+		&__subtitle {
+			margin-bottom: 3.1rem;
+			max-width: 19.7rem;
+			font-size: 1.6rem;
+			line-height: 2.6rem;
+			letter-spacing: 0;
+		}
 
-		&__causes {}
+		&__causes {
+			margin-bottom: 4rem;
+			flex-direction: column;
+			align-items: start;
+			gap: 1.2rem;
+		}
 
-		&__item {}
+		&__item {
+			flex-basis: auto;
+			width: 20.7rem;
+			font-size: 1.2rem;
+			line-height: 1.8rem;
+		}
 
-		&__btn {}
+		&__btn {
+			width: 100%;
+			padding: 2.8rem 3rem;
+			font-size: 1.6rem;
 
-		&__label {}
+			.main-btn__arrow {
+				flex-basis: 1.6rem;
+				width: 1.6rem;
+				height: 1.6rem;
+			}
+		}
 
-		&__name {}
+		&__label {
+			right: 2.4rem;
+			bottom: 17.3rem;
+		}
 
-		&__job {}
+		&__name {
+			margin-bottom: 0.3rem;
+			font-size: 1.2rem;
+			line-height: 1;
+		}
+
+		&__job {
+			font-size: 0.8rem;
+			line-height: 1;
+		}
+	}
+
+	.switch {
+		width: 6rem;
+		height: 3rem;
+		margin: 0 1.5rem;
+		transform: translateY(0.3rem);
+
+		&__handle {
+			inset: 0.4rem;
+			width: 2.2rem;
+			height: 2.2rem;
+		}
+
+		&.active &__handle {
+			transform: translateX(3.1rem);
+		}
 	}
 
 }
