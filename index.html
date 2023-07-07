@@ -5,9 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kiselev marketinging</title>
-	<!-- <link rel="icon" type="image/svg+xml" href="media/favicon.svg"> -->
-	<!-- <link rel="icon" type="image/png" href="media/favicon.png"> -->
+	<title>Kiselev marketing</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+	<link rel="manifest" href="media/favicon/site.webmanifest">
+	<link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#30bf58">
+	<meta name="msapplication-TileColor" content="#16161c">
+	<meta name="theme-color" content="#16161c">
 	<link rel="stylesheet" href="libs/custom-select.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
@@ -30,9 +35,9 @@
 						под ключ с&nbsp;2017 года
 					</p>
 				</div>
-				<div class="header__whatsapp mobile">
-					<img src="media/svg/whatsapp.svg" alt="whatsapp">
-				</div>
+				<a href="#" class="header__whatsapp mobile">
+					<img data-src="media/svg/whatsapp.svg" alt="whatsapp">
+				</a>
 				<div class="header__grade flex">
 					<p class="header__rating">5,0</p>
 					<p class="header__text">
@@ -42,9 +47,9 @@
 					</p>
 				</div>
 				<div class="header__social flex">
-					<div class="header__whatsapp">
+					<a href="#" class="header__whatsapp">
 						<img src="media/svg/whatsapp.svg" alt="whatsapp">
-					</div>
+					</a>
 					<p class="header__write">
 						Пишите нам, мы
 						<b>всегда онлайн</b>
@@ -61,24 +66,24 @@
 				<nav class="header__nav nav flex">
 					<div class="nav__row flex">
 						<ul class="nav__list">
-							<li class="nav__item"><a href="#" class="nav__link">Калькулятор</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Ваши преимущества</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Кейсы</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Видеоотзывы</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Тест-драйв</a></li>
+							<li class="nav__item"><a href="#quiz" class="nav__link">Калькулятор</a></li>
+							<li class="nav__item"><a href="#benefits" class="nav__link">Ваши преимущества</a></li>
+							<li class="nav__item"><a href="#results" class="nav__link">Кейсы</a></li>
+							<li class="nav__item"><a href="#thanks" class="nav__link">Видеоотзывы</a></li>
+							<li class="nav__item"><a href="#drive" class="nav__link">Тест-драйв</a></li>
 						</ul>
 						<ul class="nav__list">
-							<li class="nav__item"><a href="#" class="nav__link">Что входит</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Как усиливаем</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Как контролируете</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Консультация</a></li>
+							<li class="nav__item"><a href="#system" class="nav__link">Что входит</a></li>
+							<li class="nav__item"><a href="#services" class="nav__link">Как усиливаем</a></li>
+							<li class="nav__item"><a href="#team" class="nav__link">Команда</a></li>
+							<li class="nav__item"><a href="#sureness" class="nav__link">Как контролируете</a></li>
+							<li class="nav__item"><a href="#consultation" class="nav__link">Консультация</a></li>
 						</ul>
 					</div>
 					<div class="header__bottom flex">
 						<div class="header__info flex">
 							<a href="index.html" class="header__logo">
-								<img src="media/svg/logo.svg" alt="kiselev marketinging">
+								<img data-src="media/svg/logo.svg" alt="kiselev marketinging">
 							</a>
 							<p class="header__descr">
 								Комплексное продвижение мебельных компаний
@@ -90,7 +95,7 @@
 							<p>ОГРНИП: 32202 80000 37012</p>
 							<p>ИНН: 0276 1793 7409</p>
 						</div>
-						<div class="header__lefts">
+						<div class="header__rights">
 							<p class="header__conf conf">Политика конфиденциальности</p>
 							<p>Copyright 2023. Все права защищены</p>
 						</div>
@@ -108,11 +113,11 @@
 					от 90-150 горячих заявок
 					в месяц на кухни и шкафы с гарантией результата
 				</h1>
-				<div class="hero__title">
+				<div class="hero__title animation">
 					<span class="hero__title--big">Получайте</span>
 					<div class="hero__title--middle">
 						от 90
-						<div class="hero__switch switch active">
+						<div class="hero__switch switch lidmagnit-open active">
 							<div class="switch__handle"></div>
 						</div>
 						150 горячих заявок
@@ -143,10 +148,10 @@
 					</li>
 				</ul>
 
-				<button class="hero__btn main-btn main-btn--green">
+				<button class="hero__btn main-btn main-btn--green callback-open">
 					<span class="main-btn__text">Получить заявки</span>
 					<span class="main-btn__arrow">
-						<img src="media/svg/arrow-btn.svg" alt="">
+						<img data-src="media/svg/arrow-btn.svg" alt="">
 					</span>
 					<span class="btn-blick"></span>
 				</button>
@@ -195,7 +200,7 @@
 											<input type="radio" class="quiz-option__input" name="quiz0" id="quiz0-1" value="Кухни на заказ">
 											<div class="quiz-option__wrapper">
 												<div class="quiz-option__img">
-													<img src="media/img/quiz-1.jpg" alt="Кухни на заказ">
+													<img data-src="media/img/quiz-1.jpg" alt="Кухни на заказ">
 												</div>
 												<div class="quiz-option__wrap">
 													<div class="quiz-option__radio">
@@ -215,7 +220,7 @@
 												value="Кухни и шкафы на заказ">
 											<div class="quiz-option__wrapper">
 												<div class="quiz-option__img">
-													<img src="media/img/quiz-2.jpg" alt="Кухни и шкафы на заказ">
+													<img data-src="media/img/quiz-2.jpg" alt="Кухни и шкафы на заказ">
 												</div>
 												<div class="quiz-option__wrap">
 													<div class="quiz-option__radio">
@@ -235,7 +240,7 @@
 												value="Всю корпусную мебель">
 											<div class="quiz-option__wrapper">
 												<div class="quiz-option__img">
-													<img src="media/img/quiz-1.jpg" alt="Всю корпусную мебель">
+													<img data-src="media/img/quiz-1.jpg" alt="Всю корпусную мебель">
 												</div>
 												<div class="quiz-option__wrap">
 													<div class="quiz-option__radio">
@@ -403,12 +408,12 @@
 										</ul>
 										<div class="quiz-item__video">
 											<a href="#" class="quiz-item__play" data-fancybox="quiz-video">
-												<img src="media/svg/play.svg" alt="">
+												<img data-src="media/svg/play.svg" alt="">
 											</a>
 											<div class="quiz-item__img">
 												<picture>
 													<source srcset="media/img/quiz-video.webp" type="image/webp">
-													<img src="media/img/quiz-video.jpg" alt="">
+													<img data-src="media/img/quiz-video.jpg" alt="">
 												</picture>
 											</div>
 											<p class="quiz-item__video-descr">
@@ -493,7 +498,7 @@
 										<div class="quiz-image">
 											<picture>
 												<source srcset="media/img/kitchen.webp" type="image/webp">
-												<img src="media/img/kitchen.png" alt="">
+												<img data-src="media/img/kitchen.png" alt="">
 											</picture>
 										</div>
 									</div>
@@ -577,7 +582,7 @@
 										<div class="quiz-image">
 											<picture>
 												<source srcset="media/img/budget.webp" type="image/webp">
-												<img src="media/img/budget.png" alt="">
+												<img data-src="media/img/budget.png" alt="">
 											</picture>
 										</div>
 									</div>
@@ -588,16 +593,34 @@
 									</h3>
 									<ul class="quiz__results flex">
 										<li class="quiz-result flex">
-											<p class="quiz-result__descr">Количество заявок </p>
-											<p class="quiz-result__total">50 - 120</p>
+											<p class="quiz-result__descr">
+												<input type="hidden" name="title-final-1" value="Количество заявок">
+												Количество заявок
+											</p>
+											<p class="quiz-result__total">
+												<input type="hidden" name="final-1" value="">
+												<span class="quiz-result__number"></span>
+											</p>
 										</li>
 										<li class="quiz-result flex">
-											<p class="quiz-result__descr">Количество замеров / встреч </p>
-											<p class="quiz-result__total">10 - 24</p>
+											<p class="quiz-result__descr">
+												<input type="hidden" name="title-final-2" value="Количество замеров / встреч">
+												Количество замеров / встреч
+											</p>
+											<p class="quiz-result__total">
+												<input type="hidden" name="final-2" value="">
+												<span class="quiz-result__number"></span>
+											</p>
 										</li>
 										<li class="quiz-result flex">
-											<p class="quiz-result__descr">Сумма продаж, руб </p>
-											<p class="quiz-result__total">450 000 - 1 080 000 <span>рублей</span></p>
+											<p class="quiz-result__descr">
+												<input type="hidden" name="title-final-3" value="Сумма продаж, руб">
+												Сумма продаж, руб
+											</p>
+											<p class="quiz-result__total">
+												<input type="hidden" name="final-3" value="">
+												<span class="quiz-result__number"></span>&nbsp;<span>рублей</span>
+											</p>
 										</li>
 									</ul>
 									<p class="quiz-item__info stroke">
@@ -622,7 +645,7 @@
 										<button class="main-btn main-btn--green">
 											<span class="main-btn__text">получить точный<br> расчет</span>
 											<span class="main-btn__arrow">
-												<img src="media/svg/arrow-btn.svg" alt="">
+												<img data-src="media/svg/arrow-btn.svg" alt="">
 											</span>
 											<span class="btn-blick"></span>
 										</button>
@@ -644,7 +667,7 @@
 										<span class="btn-blick"></span>
 										<span class="main-btn__text">Далее</span>
 										<span class="main-btn__arrow">
-											<img src="media/svg/arrow-btn.svg" alt="">
+											<img data-src="media/svg/arrow-btn.svg" alt="">
 										</span>
 										<span class="quiz-btn__hint">Ответьте на вопрос выше</span>
 									</button>
@@ -712,11 +735,11 @@
 						<div class="solution__img">
 							<picture>
 								<source srcset="media/img/img-video.webp" type="image/webp">
-								<img src="media/img/img-video.jpg" alt="">
+								<img data-src="media/img/img-video.jpg" alt="">
 							</picture>
 						</div>
 						<div class="solution__play">
-							<img src="media/svg/play.svg" alt="">
+							<img data-src="media/svg/play.svg" alt="">
 						</div>
 						<p class="solution__label">
 							Всего 3&nbsp;минуты&nbsp;&mdash; закрою 90% ваших сомнений
@@ -727,7 +750,7 @@
 		</section>
 
 		<!-- преимущества -->
-		<section class="benefits">
+		<section class="benefits" id="benefits">
 			<div class="container">
 				<div class="benefits__head flex">
 					<h2 class="benefits__title section-title">
@@ -815,7 +838,7 @@
 		</section>
 
 		<!-- результаты -->
-		<section class="results">
+		<section class="results" id="results">
 			<div class="container">
 				<h2 class="results__title section-title">
 					<span class="section-title__up">посмотрите</span>
@@ -835,13 +858,13 @@
 							<div class="results-slide__design">
 								<picture>
 									<source srcset="media/img/results-1-design.webp" type="image/webp">
-									<img src="media/img/results-1-design.jpg" alt="">
+									<img data-src="media/img/results-1-design.jpg" alt="">
 								</picture>
 							</div>
 							<div class="results-slide__statistic">
 								<picture>
 									<source srcset="media/img/results-1-st.webp" type="image/webp">
-									<img src="media/img/results-1-st.jpg" alt="">
+									<img data-src="media/img/results-1-st.jpg" alt="">
 								</picture>
 							</div>
 							<div class="results-slide__feedback flex">
@@ -849,7 +872,7 @@
 									<div class="results-slide__client">
 										<picture>
 											<source srcset="media/img/feedback-1.webp" type="image/webp">
-											<img src="media/img/feedback-1.jpg" alt="">
+											<img data-src="media/img/feedback-1.jpg" alt="">
 										</picture>
 									</div>
 									<p class="results-slide__name">
@@ -862,7 +885,7 @@
 									“Спасибо парням и Ольге из Киселев Маркетинга, они прям показали как реально выглядит рынок заказов на
 									кухни в Кемеровской области.”
 								</p>
-								<button class="results-slide__btn main-btn main-btn--transparent">
+								<button class="results-slide__btn main-btn main-btn--transparent clients-open">
 									<span class="main-btn__text">Связаться с клиентом</span>
 								</button>
 							</div>
@@ -898,13 +921,13 @@
 							<div class="results-slide__design">
 								<picture>
 									<source srcset="media/img/results-1-design.webp" type="image/webp">
-									<img src="media/img/results-1-design.jpg" alt="">
+									<img data-src="media/img/results-1-design.jpg" alt="">
 								</picture>
 							</div>
 							<div class="results-slide__statistic">
 								<picture>
 									<source srcset="media/img/results-1-st.webp" type="image/webp">
-									<img src="media/img/results-1-st.jpg" alt="">
+									<img data-src="media/img/results-1-st.jpg" alt="">
 								</picture>
 							</div>
 							<div class="results-slide__feedback flex">
@@ -912,7 +935,7 @@
 									<div class="results-slide__client">
 										<picture>
 											<source srcset="media/img/feedback-1.webp" type="image/webp">
-											<img src="media/img/feedback-1.jpg" alt="">
+											<img data-src="media/img/feedback-1.jpg" alt="">
 										</picture>
 									</div>
 									<p class="results-slide__name">
@@ -924,7 +947,7 @@
 									“Спасибо парням и Ольге из Киселев Маркетинга, они прям показали как реально выглядит рынок заказов на
 									кухни в Кемеровской области.”
 								</p>
-								<button class="results-slide__btn main-btn main-btn--transparent">
+								<button class="results-slide__btn main-btn main-btn--transparent clients-open">
 									<span class="main-btn__text">Связаться с клиентом</span>
 								</button>
 							</div>
@@ -960,13 +983,13 @@
 							<div class="results-slide__design">
 								<picture>
 									<source srcset="media/img/results-1-design.webp" type="image/webp">
-									<img src="media/img/results-1-design.jpg" alt="">
+									<img data-src="media/img/results-1-design.jpg" alt="">
 								</picture>
 							</div>
 							<div class="results-slide__statistic">
 								<picture>
 									<source srcset="media/img/results-1-st.webp" type="image/webp">
-									<img src="media/img/results-1-st.jpg" alt="">
+									<img data-src="media/img/results-1-st.jpg" alt="">
 								</picture>
 							</div>
 							<div class="results-slide__feedback flex">
@@ -974,7 +997,7 @@
 									<div class="results-slide__client">
 										<picture>
 											<source srcset="media/img/feedback-1.webp" type="image/webp">
-											<img src="media/img/feedback-1.jpg" alt="">
+											<img data-src="media/img/feedback-1.jpg" alt="">
 										</picture>
 									</div>
 									<p class="results-slide__name">
@@ -986,7 +1009,7 @@
 									“Спасибо парням и Ольге из Киселев Маркетинга, они прям показали как реально выглядит рынок заказов на
 									кухни в Кемеровской области.”
 								</p>
-								<button class="results-slide__btn main-btn main-btn--transparent">
+								<button class="results-slide__btn main-btn main-btn--transparent clients-open">
 									<span class="main-btn__text">Связаться с клиентом</span>
 								</button>
 							</div>
@@ -1039,7 +1062,7 @@
 		</section>
 
 		<!-- клиенты благодарят в видео -->
-		<section class="thanks">
+		<section class="thanks" id="thanks">
 			<div class="container">
 				<h2 class="thanks__title section-title">
 					Клиенты
@@ -1056,12 +1079,12 @@
 					<div class="swiper-wrapper">
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-1.jpg" alt="">
+								<img data-src="media/img/thanks-1.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -1075,18 +1098,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-2.jpg" alt="">
+								<img data-src="media/img/thanks-2.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -1100,18 +1123,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-1.jpg" alt="">
+								<img data-src="media/img/thanks-1.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -1125,18 +1148,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-1.jpg" alt="">
+								<img data-src="media/img/thanks-1.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -1150,18 +1173,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-2.jpg" alt="">
+								<img data-src="media/img/thanks-2.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -1175,18 +1198,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-1.jpg" alt="">
+								<img data-src="media/img/thanks-1.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -1200,7 +1223,7 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
@@ -1225,10 +1248,10 @@
 		</section>
 
 		<!-- тест драйв -->
-		<section class="drive">
+		<section class="drive" id="drive">
 			<div class="container">
 				<div class="drive__check">
-					<img src="media/svg/arrow-square.svg" alt="">
+					<img data-src="media/svg/arrow-square.svg" alt="">
 					<p class="accent">
 						Проверьте <br>
 						нас в деле:
@@ -1267,7 +1290,7 @@
 						</p>
 					</div>
 					<form action="mailer/send.php" method="POST" class="drive__form" data-form-validate-js>
-						<input type="hidden" name="formname" value="">
+						<input type="hidden" name="formname" value="testdrive">
 						<p class="drive__subtitle">
 							Свяжемся в течение
 							часа или быстрее в&nbsp;рабочее время
@@ -1280,7 +1303,7 @@
 								Получить условия и закрепить скидку
 							</span>
 							<span class="main-btn__arrow">
-								<img src="media/svg/arrow-btn.svg" alt="">
+								<img data-src="media/svg/arrow-btn.svg" alt="">
 							</span>
 						</button>
 						<div class="drive__agree agree">
@@ -1291,7 +1314,7 @@
 						</div>
 						<div class="drive__now flex">
 							<a href="#" class="drive__wa" aria-label="ссылка на whatsapp">
-								<img src="media/svg/whatsapp-green.svg" alt="">
+								<img data-src="media/svg/whatsapp-green.svg" alt="">
 							</a>
 							<p class="drive__write">
 								или просто напишите нам прямо сейчас
@@ -1313,7 +1336,7 @@
 										руб.
 									</p>
 								</div>
-								<button class="drive-slide__btn main-btn main-btn--transparent">
+								<button class="drive-slide__btn main-btn main-btn--transparent clients-open">
 									<span class="main-btn__text">Связаться с клиентом</span>
 								</button>
 							</div>
@@ -1328,7 +1351,7 @@
 										руб.
 									</p>
 								</div>
-								<button class="drive-slide__btn main-btn main-btn--transparent">
+								<button class="drive-slide__btn main-btn main-btn--transparent clients-open">
 									<span class="main-btn__text">Связаться с клиентом</span>
 								</button>
 							</div>
@@ -1343,7 +1366,7 @@
 										руб.
 									</p>
 								</div>
-								<button class="drive-slide__btn main-btn main-btn--transparent">
+								<button class="drive-slide__btn main-btn main-btn--transparent clients-open">
 									<span class="main-btn__text">Связаться с клиентом</span>
 								</button>
 							</div>
@@ -1368,7 +1391,7 @@
 		</section>
 
 		<!-- из чего состоит система -->
-		<section class="system">
+		<section class="system" id="system">
 			<div class="container">
 				<h2 class="system__title section-title">
 					<b>Из&nbsp;чего состоит маркетинговая система</b>
@@ -1427,12 +1450,12 @@
 									<span class="btn-blick"></span>
 									<span class="main-btn__text">узнать стоимость</span>
 									<span class="main-btn__arrow">
-										<img src="media/svg/arrow-btn.svg" alt="">
+										<img data-src="media/svg/arrow-btn.svg" alt="">
 									</span>
 								</a>
 								<div class="system__contact">
 									<a href="#" class="system__wa">
-										<img src="media/svg/whatsapp-green.svg" alt="WhatsApp">
+										<img data-src="media/svg/whatsapp-green.svg" alt="WhatsApp">
 									</a>
 									<p class="system__write">
 										или просто <span class="accent">напишите нам прямо сейчас.</span> Презентуем и&nbsp;расскажем про
@@ -1461,7 +1484,7 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-1.1.jpg" alt="">
+									<img data-src="media/img/scrnsht-1.1.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__img-item">
@@ -1473,7 +1496,7 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-1.2.jpg" alt="">
+									<img data-src="media/img/scrnsht-1.2.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__img-item">
@@ -1485,11 +1508,11 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-1.3.jpg" alt="">
+									<img data-src="media/img/scrnsht-1.3.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__decor">
-								<img src="media/svg/packing.svg" alt="Упаковка">
+								<img data-src="media/svg/packing.svg" alt="Упаковка">
 							</div>
 						</div>
 					</div>
@@ -1515,12 +1538,12 @@
 									<span class="btn-blick"></span>
 									<span class="main-btn__text">узнать стоимость</span>
 									<span class="main-btn__arrow">
-										<img src="media/svg/arrow-btn.svg" alt="">
+										<img data-src="media/svg/arrow-btn.svg" alt="">
 									</span>
 								</a>
 								<div class="system__contact">
 									<a href="#" class="system__wa">
-										<img src="media/svg/whatsapp-green.svg" alt="WhatsApp">
+										<img data-src="media/svg/whatsapp-green.svg" alt="WhatsApp">
 									</a>
 									<p class="system__write">
 										или просто <span class="accent">напишите нам прямо сейчас.</span> Презентуем и&nbsp;расскажем про
@@ -1547,7 +1570,7 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-2.1.jpg" alt="">
+									<img data-src="media/img/scrnsht-2.1.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__img-item">
@@ -1559,7 +1582,7 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-2.2.jpg" alt="">
+									<img data-src="media/img/scrnsht-2.2.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__img-item">
@@ -1571,11 +1594,11 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-2.3.jpg" alt="">
+									<img data-src="media/img/scrnsht-2.3.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__decor">
-								<img src="media/svg/chat-bot.svg" alt="чат-бот">
+								<img data-src="media/svg/chat-bot.svg" alt="чат-бот">
 							</div>
 						</div>
 					</div>
@@ -1604,12 +1627,12 @@
 									<span class="btn-blick"></span>
 									<span class="main-btn__text">узнать стоимость</span>
 									<span class="main-btn__arrow">
-										<img src="media/svg/arrow-btn.svg" alt="">
+										<img data-src="media/svg/arrow-btn.svg" alt="">
 									</span>
 								</a>
 								<div class="system__contact">
 									<a href="#" class="system__wa">
-										<img src="media/svg/whatsapp-green.svg" alt="WhatsApp">
+										<img data-src="media/svg/whatsapp-green.svg" alt="WhatsApp">
 									</a>
 									<p class="system__write">
 										или просто <span class="accent">напишите нам прямо сейчас.</span> Презентуем и&nbsp;расскажем про
@@ -1636,7 +1659,7 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-3.1.jpg" alt="">
+									<img data-src="media/img/scrnsht-3.1.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__img-item">
@@ -1648,7 +1671,7 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-3.2.jpg" alt="">
+									<img data-src="media/img/scrnsht-3.2.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__img-item">
@@ -1660,11 +1683,11 @@
 									</p>
 								</div>
 								<div class="system__img">
-									<img src="media/img/scrnsht-3.3.jpg" alt="">
+									<img data-src="media/img/scrnsht-3.3.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__decor">
-								<img src="media/svg/ad.svg" alt="реклама">
+								<img data-src="media/svg/ad.svg" alt="реклама">
 							</div>
 						</div>
 					</div>
@@ -1694,12 +1717,12 @@
 									<span class="btn-blick"></span>
 									<span class="main-btn__text">узнать стоимость</span>
 									<span class="main-btn__arrow">
-										<img src="media/svg/arrow-btn.svg" alt="">
+										<img data-src="media/svg/arrow-btn.svg" alt="">
 									</span>
 								</a>
 								<div class="system__contact">
 									<a href="#" class="system__wa">
-										<img src="media/svg/whatsapp-green.svg" alt="WhatsApp">
+										<img data-src="media/svg/whatsapp-green.svg" alt="WhatsApp">
 									</a>
 									<p class="system__write">
 										или просто <span class="accent">напишите нам прямо сейчас.</span> Презентуем и&nbsp;расскажем про
@@ -1712,21 +1735,21 @@
 						<div class="system__images flex">
 							<div class="system__img-item">
 								<div class="system__img">
-									<img src="media/img/scrnsht-4.1.jpg" alt="">
+									<img data-src="media/img/scrnsht-4.1.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__img-item">
 								<div class="system__img">
-									<img src="media/img/scrnsht-4.2.jpg" alt="">
+									<img data-src="media/img/scrnsht-4.2.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__img-item">
 								<div class="system__img">
-									<img src="media/img/scrnsht-4.3.jpg" alt="">
+									<img data-src="media/img/scrnsht-4.3.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__decor">
-								<img src="media/svg/site.svg" alt="сайт">
+								<img data-src="media/svg/site.svg" alt="сайт">
 							</div>
 						</div>
 					</div>
@@ -1753,12 +1776,12 @@
 									<span class="btn-blick"></span>
 									<span class="main-btn__text">узнать стоимость</span>
 									<span class="main-btn__arrow">
-										<img src="media/svg/arrow-btn.svg" alt="">
+										<img data-src="media/svg/arrow-btn.svg" alt="">
 									</span>
 								</a>
 								<div class="system__contact">
 									<a href="#" class="system__wa">
-										<img src="media/svg/whatsapp-green.svg" alt="WhatsApp">
+										<img data-src="media/svg/whatsapp-green.svg" alt="WhatsApp">
 									</a>
 									<p class="system__write">
 										или просто <span class="accent">напишите нам прямо сейчас.</span> Презентуем и&nbsp;расскажем про
@@ -1771,11 +1794,11 @@
 						<div class="system__images flex">
 							<div class="system__img-item system__img-item--big">
 								<div class="system__img">
-									<img src="media/img/scrnsht-5.jpg" alt="">
+									<img data-src="media/img/scrnsht-5.jpg" alt="">
 								</div>
 							</div>
 							<div class="system__decor">
-								<img src="media/svg/yandex-direct.svg" alt="Яндекс Директ">
+								<img data-src="media/svg/yandex-direct.svg" alt="Яндекс Директ">
 							</div>
 						</div>
 					</div>
@@ -1784,7 +1807,7 @@
 				<div class="system__result flex">
 					<div class="system__problem">
 						<div class="system__close">
-							<img src="media/svg/x.svg" alt="">
+							<img data-src="media/svg/x.svg" alt="">
 						</div>
 						<p class="system__problem-title">
 							<span class="accent">Хорошо. Заявки будут,</span> но&nbsp;они не&nbsp;закрываются даже в&nbsp;замеры
@@ -1824,7 +1847,7 @@
 		</section>
 
 		<!-- дополнительные услуги -->
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<h2 class="services__title section-title">
 					<span class="stroke">
@@ -1848,11 +1871,11 @@
 							<p class="services__descr">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, optio.
 							</p>
-							<p class="services__link flex">Подробнее</p>
+							<p class="services__link flex callback-open">Подробнее</p>
 							<div class="services__bottom flex">
 								<p class="services__number"></p>
 								<button class="services__btn flex" aria-label="открыть карточку">
-									<img src="media/svg/arrow-btn.svg" alt="стрелка">
+									<img data-src="media/svg/arrow-btn.svg" alt="стрелка">
 								</button>
 							</div>
 							<div class="services__icon">
@@ -1865,11 +1888,11 @@
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, adipisci perspiciatis! Nobis quaerat
 								autem sint?
 							</p>
-							<p class="services__link flex">Подробнее</p>
+							<p class="services__link flex callback-open">Подробнее</p>
 							<div class="services__bottom flex">
 								<p class="services__number"></p>
 								<button class="services__btn flex" aria-label="открыть карточку">
-									<img src="media/svg/arrow-btn.svg" alt="стрелка">
+									<img data-src="media/svg/arrow-btn.svg" alt="стрелка">
 								</button>
 							</div>
 							<div class="services__icon">
@@ -1883,11 +1906,11 @@
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit vitae quasi nam eos unde! Porro nostrum
 								ut cumque error ab.
 							</p>
-							<p class="services__link flex">Подробнее</p>
+							<p class="services__link flex callback-open">Подробнее</p>
 							<div class="services__bottom flex">
 								<p class="services__number"></p>
 								<button class="services__btn flex" aria-label="открыть карточку">
-									<img src="media/svg/arrow-btn.svg" alt="стрелка">
+									<img data-src="media/svg/arrow-btn.svg" alt="стрелка">
 								</button>
 							</div>
 							<div class="services__icon">
@@ -1900,11 +1923,11 @@
 								3&nbsp;года внедряем CRM для результативного отдела продаж.
 								Пропишем все ваши процессы и автоматизируем задачи под ваш мебельный бизнес.
 							</p>
-							<p class="services__link flex">Подробнее</p>
+							<p class="services__link flex callback-open">Подробнее</p>
 							<div class="services__bottom flex">
 								<p class="services__number"></p>
 								<button class="services__btn flex" aria-label="открыть карточку">
-									<img src="media/svg/arrow-btn.svg" alt="стрелка">
+									<img data-src="media/svg/arrow-btn.svg" alt="стрелка">
 								</button>
 							</div>
 							<div class="services__icon">
@@ -1918,11 +1941,11 @@
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam aliquam esse ipsum voluptate corporis,
 								harum officia!
 							</p>
-							<p class="services__link flex">Подробнее</p>
+							<p class="services__link flex callback-open">Подробнее</p>
 							<div class="services__bottom flex">
 								<p class="services__number"></p>
 								<button class="services__btn flex" aria-label="открыть карточку">
-									<img src="media/svg/arrow-btn.svg" alt="стрелка">
+									<img data-src="media/svg/arrow-btn.svg" alt="стрелка">
 								</button>
 							</div>
 							<div class="services__icon">
@@ -1935,11 +1958,11 @@
 							<p class="services__descr">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
-							<p class="services__link flex">Подробнее</p>
+							<p class="services__link flex callback-open">Подробнее</p>
 							<div class="services__bottom flex">
 								<p class="services__number"></p>
 								<button class="services__btn flex" aria-label="открыть карточку">
-									<img src="media/svg/arrow-btn.svg" alt="стрелка">
+									<img data-src="media/svg/arrow-btn.svg" alt="стрелка">
 								</button>
 							</div>
 							<div class="services__icon">
@@ -1953,11 +1976,11 @@
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur deleniti harum expedita
 								mollitia aliquid.
 							</p>
-							<p class="services__link flex">Подробнее</p>
+							<p class="services__link flex callback-open">Подробнее</p>
 							<div class="services__bottom flex">
 								<p class="services__number"></p>
 								<button class="services__btn flex" aria-label="открыть карточку">
-									<img src="media/svg/arrow-btn.svg" alt="стрелка">
+									<img data-src="media/svg/arrow-btn.svg" alt="стрелка">
 								</button>
 							</div>
 							<div class="services__icon">
@@ -1986,7 +2009,7 @@
 		</section>
 
 		<!-- команда -->
-		<section class="team">
+		<section class="team" id="team">
 			<div class="container">
 				<h2 class="team__title section-title">
 					Над вашим проектом будет работать вся команда.<span class="br mobile"></span>
@@ -2008,7 +2031,7 @@
 								<div class="team__img">
 									<picture>
 										<source srcset="media/img/director.webp" type="image/webp">
-										<img src="media/img/director.png" alt="">
+										<img data-src="media/img/director.png" alt="">
 									</picture>
 									<div class="team__info">
 										<p class="team__name">Никита Киселев</p>
@@ -2044,7 +2067,7 @@
 								<div class="team__img">
 									<picture>
 										<source srcset="media/img/manager-quiz.webp" type="image/webp">
-										<img src="media/img/manager-quiz.png" alt="">
+										<img data-src="media/img/manager-quiz.png" alt="">
 									</picture>
 									<div class="team__info">
 										<p class="team__name">Ольга</p>
@@ -2081,7 +2104,7 @@
 								<div class="team__img">
 									<picture>
 										<source srcset="media/img/director.webp" type="image/webp">
-										<img src="media/img/director.png" alt="">
+										<img data-src="media/img/director.png" alt="">
 									</picture>
 									<div class="team__info">
 										<p class="team__name">Никита Киселев</p>
@@ -2117,7 +2140,7 @@
 								<div class="team__img">
 									<picture>
 										<source srcset="media/img/director.webp" type="image/webp">
-										<img src="media/img/director.png" alt="">
+										<img data-src="media/img/director.png" alt="">
 									</picture>
 									<div class="team__info">
 										<p class="team__name">Никита Киселев</p>
@@ -2153,7 +2176,7 @@
 								<div class="team__img">
 									<picture>
 										<source srcset="media/img/director.webp" type="image/webp">
-										<img src="media/img/director.png" alt="">
+										<img data-src="media/img/director.png" alt="">
 									</picture>
 									<div class="team__info">
 										<p class="team__name">Никита Киселев</p>
@@ -2207,19 +2230,19 @@
 					<div class="team__members desktop">
 						<div class="swiper-wrapper">
 							<div class="team__member swiper-slide">
-								<img src="media/img/team-1.png" alt="">
+								<img data-src="media/img/team-1.png" alt="">
 							</div>
 							<div class="team__member swiper-slide">
-								<img src="media/img/team-2.png" alt="">
+								<img data-src="media/img/team-2.png" alt="">
 							</div>
 							<div class="team__member swiper-slide">
-								<img src="media/img/team-1.png" alt="">
+								<img data-src="media/img/team-1.png" alt="">
 							</div>
 							<div class="team__member swiper-slide">
-								<img src="media/img/team-2.png" alt="">
+								<img data-src="media/img/team-2.png" alt="">
 							</div>
 							<div class="team__member swiper-slide">
-								<img src="media/img/team-2.png" alt="">
+								<img data-src="media/img/team-2.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -2250,11 +2273,11 @@
 							и&nbsp;работают
 							с&nbsp;нами дольше 2-ух лет
 						</p>
-						<button class="request__btn main-btn main-btn--green">
+						<button class="request__btn main-btn main-btn--green callback-open">
 							<span class="btn-blick"></span>
 							<span class="main-btn__text">Получить заявки</span>
 							<span class="main-btn__arrow">
-								<img src="media/svg/arrow-btn.svg" alt="">
+								<img data-src="media/svg/arrow-btn.svg" alt="">
 							</span>
 						</button>
 					</div>
@@ -2264,7 +2287,7 @@
 						<div class="request__slide swiper-slide">
 							<a href="media/img/request-1.jpg" class="request__zoom" data-fancybox="request"></a>
 							<div class="request__img">
-								<img src="media/img/request-1.jpg" alt="">
+								<img data-src="media/img/request-1.jpg" alt="">
 							</div>
 							<div class="request__text">
 								результат
@@ -2279,7 +2302,7 @@
 						<div class="request__slide swiper-slide">
 							<a href="media/img/request-1.jpg" class="request__zoom" data-fancybox="request"></a>
 							<div class="request__img">
-								<img src="media/img/request-1.jpg" alt="">
+								<img data-src="media/img/request-1.jpg" alt="">
 							</div>
 							<div class="request__text">
 								результат
@@ -2294,7 +2317,7 @@
 						<div class="request__slide swiper-slide">
 							<a href="media/img/request-1.jpg" class="request__zoom" data-fancybox="request"></a>
 							<div class="request__img">
-								<img src="media/img/request-1.jpg" alt="">
+								<img data-src="media/img/request-1.jpg" alt="">
 							</div>
 							<div class="request__text">
 								результат
@@ -2309,7 +2332,7 @@
 						<div class="request__slide swiper-slide">
 							<a href="media/img/request-1.jpg" class="request__zoom" data-fancybox="request"></a>
 							<div class="request__img">
-								<img src="media/img/request-1.jpg" alt="">
+								<img data-src="media/img/request-1.jpg" alt="">
 							</div>
 							<div class="request__text">
 								результат
@@ -2367,7 +2390,7 @@
 					</div>
 					<div class="marketing__list">
 						<div class="marketing__x">
-							<img src="media/svg/x.svg" alt="">
+							<img data-src="media/svg/x.svg" alt="">
 						</div>
 						<div class="marketing__item">
 							<p class="marketing__name">Без <span class="accent">ложных обещаний</span></p>
@@ -2416,7 +2439,7 @@
 		</section>
 
 		<!-- вы спокойны за каждый рубль -->
-		<section class="sureness">
+		<section class="sureness" id="sureness">
 			<div class="container">
 				<div class="sureness__row flex">
 					<div class="sureness__text">
@@ -2452,7 +2475,7 @@
 						</ul>
 					</div>
 					<div class="sureness__img">
-						<img src="media/img/scrnsht-5.jpg" alt="">
+						<img data-src="media/img/scrnsht-5.jpg" alt="">
 						<a href="media/img/scrnsht-5.jpg" class="sureness__zoom" data-fancybox="sureness"></a>
 					</div>
 				</div>
@@ -2464,7 +2487,7 @@
 						<span class="btn-blick"></span>
 						<span class="main-btn__text">Узнать стоимость</span>
 						<span class="main-btn__arrow">
-							<img src="media/svg/arrow-btn.svg" alt="">
+							<img data-src="media/svg/arrow-btn.svg" alt="">
 						</span>
 					</a>
 				</div>
@@ -2488,11 +2511,11 @@
 				</h2>
 				<div class="problems__row flex">
 					<div class="problems__decor">
-						<img src="media/svg/full.svg" alt="">
+						<img data-src="media/svg/full.svg" alt="">
 					</div>
 					<div class="problems__item">
 						<div class="problems__x">
-							<img src="media/svg/x.svg" alt="">
+							<img data-src="media/svg/x.svg" alt="">
 						</div>
 						<p class="problems__name">
 							<span class="accent">А что если...</span> заявки есть и в планах захватить мебельный рынок региона
@@ -2515,11 +2538,11 @@
 				</div>
 				<div class="problems__row flex">
 					<div class="problems__decor">
-						<img src="media/svg/warranty.svg" alt="">
+						<img data-src="media/svg/warranty.svg" alt="">
 					</div>
 					<div class="problems__item">
 						<div class="problems__x">
-							<img src="media/svg/x.svg" alt="">
+							<img data-src="media/svg/x.svg" alt="">
 						</div>
 						<p class="problems__name">
 							Вложения в<br class="desktop"> маркетинг
@@ -2564,12 +2587,12 @@
 					<div class="swiper-wrapper">
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-1.jpg" alt="">
+								<img data-src="media/img/thanks-1.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -2583,18 +2606,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-2.jpg" alt="">
+								<img data-src="media/img/thanks-2.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -2608,18 +2631,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-1.jpg" alt="">
+								<img data-src="media/img/thanks-1.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -2633,18 +2656,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-1.jpg" alt="">
+								<img data-src="media/img/thanks-1.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -2658,18 +2681,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-2.jpg" alt="">
+								<img data-src="media/img/thanks-2.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -2683,18 +2706,18 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
 						<div class="thanks__slide swiper-slide">
 							<a href="#" class="thanks__img" data-fancybox="thanks">
-								<img src="media/img/thanks-1.jpg" alt="">
+								<img data-src="media/img/thanks-1.jpg" alt="">
 								<div class="thanks__logo">
-									<img src="media/svg/logo.svg" alt="">
+									<img data-src="media/svg/logo.svg" alt="">
 								</div>
 								<div class="thanks__play">
-									<img src="media/svg/play.svg" alt="">
+									<img data-src="media/svg/play.svg" alt="">
 								</div>
 								<div class="thanks__text">
 									отзыв от
@@ -2708,7 +2731,7 @@
 								<p>Оборот в месяц с наших заявок: 1 200 000 +++ р.</p>
 								<p>Расходы на рекламу за всё время: 54 400 р.</p>
 							</div>
-							<button class="thanks__btn main-btn main-btn--transparent">
+							<button class="thanks__btn main-btn main-btn--transparent clients-open">
 								<span class="main-btn__text">Связаться с клиентом</span>
 							</button>
 						</div>
@@ -2731,11 +2754,11 @@
 				</div>
 				<div class="problems__row flex">
 					<div class="problems__decor">
-						<img src="media/svg/solution.svg" alt="">
+						<img data-src="media/svg/solution.svg" alt="">
 					</div>
 					<div class="problems__item">
 						<div class="problems__x">
-							<img src="media/svg/x.svg" alt="">
+							<img data-src="media/svg/x.svg" alt="">
 						</div>
 						<p class="problems__name">
 							Устали, что <span class="accent">на вашем бизнесе тестируют</span> маркетинговые гипотезы
@@ -2787,7 +2810,7 @@
 		</section>
 
 		<!-- пора обсудить лично -->
-		<section class="consultation">
+		<section class="consultation" id="consultation">
 			<div class="container">
 				<div class="consultation__row flex">
 					<h2 class="consultation__title section-title">
@@ -2815,7 +2838,7 @@
 							<span class="btn-blick"></span>
 							<span class="main-btn__text">свяжитесь со мной</span>
 							<span class="main-btn__arrow">
-								<img src="media/svg/arrow-btn.svg" alt="">
+								<img data-src="media/svg/arrow-btn.svg" alt="">
 							</span>
 						</button>
 						<div class="consultation__agree agree">
@@ -2826,7 +2849,7 @@
 						</div>
 						<div class="consultation__bottom flex">
 							<a href="#" class="consultation__wa" aria-label="открыть WhatsApp">
-								<img src="media/svg/whatsapp-green.svg" alt="">
+								<img data-src="media/svg/whatsapp-green.svg" alt="">
 							</a>
 							<p class="consultation__write">
 								или просто напишите нам прямо сейчас. Обещаем, не&nbsp;будем спамить &mdash; не&nbsp;используем такие
@@ -2847,7 +2870,7 @@
 			<div class="container">
 				<div class="contacts__row flex">
 					<div class="contacts__img">
-						<img src="media/img/vk.jpg" alt="">
+						<img data-src="media/img/vk.jpg" alt="">
 					</div>
 					<div class="contacts__content flex">
 						<div class="contacts__go">
@@ -2855,26 +2878,26 @@
 								Подписывайтесь и&nbsp;смотрите, как мы делаем 1&nbsp;500&nbsp;000+ оборота на&nbsp;мебели для наших
 								клиентов
 							</p>
-							<a href="#" class="contacts__btn main-btn" target="_blank">
+							<a href="https://vk.com/lyam_po_kuhne" class="contacts__btn main-btn" target="_blank">
 								<span class="btn-blick"></span>
 								<span class="main-btn__text">перейти в вк</span>
 								<span class="main-btn__arrow">
-									<img src="media/svg/arrow-btn.svg" alt="">
+									<img data-src="media/svg/arrow-btn.svg" alt="">
 								</span>
 							</a>
 						</div>
 						<div class="contacts__callback">
 							<a href="#" class="contacts__wa" aria-label="открыть WhatsApp">
-								<img src="media/svg/whatsapp-green.svg" alt="">
+								<img data-src="media/svg/whatsapp-green.svg" alt="">
 							</a>
 							<p class="contacts__text">Звоните напрямую</p>
 							<a class="contacts__phone" href="tel:+79699990143">+7 (969) 999-01-43</a>
 							<div class="contacts__decor">
-								<img src="media/svg/contacts.svg" alt="контакты">
+								<img data-src="media/svg/contacts.svg" alt="контакты">
 							</div>
 						</div>
 						<nav class="contacts__nav flex">
-							<a href="#" class="contacts__link flex" data-anchor-btn-js>
+							<a href="#results" class="contacts__link flex" data-anchor-btn-js>
 								Кейсы
 								<svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.9072 8.1836L0.871094 8.18359L0.871094 9.92665L16.9072 9.92666L16.9072 8.1836Z" />
@@ -2882,15 +2905,15 @@
 										d="M13.8496 13.3715L12.6171 12.1389L15.6738 9.08221L12.6171 6.02551L13.8496 4.79297L18.1389 9.08221L13.8496 13.3715Z" />
 								</svg>
 							</a>
-							<a href="#" class="contacts__link flex" data-anchor-btn-js>
+							<p class="contacts__link flex lidmagnit-open">
 								Полезность
 								<svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.9072 8.1836L0.871094 8.18359L0.871094 9.92665L16.9072 9.92666L16.9072 8.1836Z" />
 									<path
 										d="M13.8496 13.3715L12.6171 12.1389L15.6738 9.08221L12.6171 6.02551L13.8496 4.79297L18.1389 9.08221L13.8496 13.3715Z" />
 								</svg>
-							</a>
-							<a href="#" class="contacts__link flex" data-anchor-btn-js>
+							</p>
+							<a href="#system" class="contacts__link flex" data-anchor-btn-js>
 								Из чего состоит система
 								<svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.9072 8.1836L0.871094 8.18359L0.871094 9.92665L16.9072 9.92666L16.9072 8.1836Z" />
@@ -2898,7 +2921,7 @@
 										d="M13.8496 13.3715L12.6171 12.1389L15.6738 9.08221L12.6171 6.02551L13.8496 4.79297L18.1389 9.08221L13.8496 13.3715Z" />
 								</svg>
 							</a>
-							<a href="#" class="contacts__link flex" data-anchor-btn-js>
+							<a href="#quiz" class="contacts__link flex" data-anchor-btn-js>
 								Сколько заявок вы получите
 								<svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.9072 8.1836L0.871094 8.18359L0.871094 9.92665L16.9072 9.92666L16.9072 8.1836Z" />
@@ -2906,7 +2929,7 @@
 										d="M13.8496 13.3715L12.6171 12.1389L15.6738 9.08221L12.6171 6.02551L13.8496 4.79297L18.1389 9.08221L13.8496 13.3715Z" />
 								</svg>
 							</a>
-							<a href="#" class="contacts__link flex" data-anchor-btn-js>
+							<a href="#team" class="contacts__link flex" data-anchor-btn-js>
 								Команда
 								<svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.9072 8.1836L0.871094 8.18359L0.871094 9.92665L16.9072 9.92666L16.9072 8.1836Z" />
@@ -2914,7 +2937,7 @@
 										d="M13.8496 13.3715L12.6171 12.1389L15.6738 9.08221L12.6171 6.02551L13.8496 4.79297L18.1389 9.08221L13.8496 13.3715Z" />
 								</svg>
 							</a>
-							<a href="#" class="contacts__link flex" data-anchor-btn-js>
+							<a href="#consultation" class="contacts__link flex" data-anchor-btn-js>
 								Консультация
 								<svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.9072 8.1836L0.871094 8.18359L0.871094 9.92665L16.9072 9.92666L16.9072 8.1836Z" />
@@ -2934,7 +2957,7 @@
 			<div class="footer__row flex">
 				<div class="footer__info flex">
 					<a href="index.html" class="header__logo">
-						<img src="media/svg/logo.svg" alt="kiselev marketinging">
+						<img data-src="media/svg/logo.svg" alt="kiselev marketinging">
 					</a>
 					<p class="header__descr">
 						Комплексное продвижение мебельных компаний
@@ -2954,6 +2977,53 @@
 		</div>
 	</footer>
 
+	<!-- липкое меню справа -->
+	<div class="sidemenu">
+		<div class="sidemenu__close">
+			<svg viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M8.72591 1.54357L5.76948 4.5L8.72591 7.45643C8.81166 7.53925 8.88006 7.63832 8.92711 7.74785C8.97416 7.85739 8.99893 7.9752 8.99997 8.09441C9.001 8.21361 8.97829 8.33183 8.93314 8.44217C8.888 8.5525 8.82134 8.65275 8.73704 8.73704C8.65275 8.82134 8.5525 8.888 8.44217 8.93314C8.33183 8.97829 8.21361 9.001 8.09441 8.99997C7.9752 8.99893 7.85739 8.97416 7.74785 8.92711C7.63832 8.88006 7.53925 8.81166 7.45643 8.72591L4.5 5.76948L1.54357 8.72591C1.46075 8.81166 1.36168 8.88006 1.25215 8.92711C1.14261 8.97416 1.0248 8.99893 0.905595 8.99997C0.786386 9.001 0.668165 8.97829 0.55783 8.93314C0.447494 8.888 0.347254 8.82134 0.262957 8.73704C0.178661 8.65275 0.111997 8.5525 0.0668554 8.44217C0.0217135 8.33183 -0.00100199 8.21361 3.3898e-05 8.09441C0.00106979 7.9752 0.0258366 7.85739 0.072889 7.74785C0.119941 7.63832 0.188338 7.53925 0.274086 7.45643L3.23052 4.5L0.274086 1.54357C0.188338 1.46075 0.119941 1.36168 0.072889 1.25215C0.0258366 1.14261 0.00106979 1.0248 3.3898e-05 0.905595C-0.00100199 0.786386 0.0217135 0.668165 0.0668554 0.55783C0.111997 0.447494 0.178661 0.347254 0.262957 0.262957C0.347254 0.178661 0.447494 0.111997 0.55783 0.0668554C0.668165 0.0217135 0.786386 -0.00100199 0.905595 3.3898e-05C1.0248 0.00106979 1.14261 0.0258366 1.25215 0.072889C1.36168 0.119941 1.46075 0.188338 1.54357 0.274086L4.5 3.23052L7.45643 0.274086C7.53925 0.188338 7.63832 0.119941 7.74785 0.072889C7.85739 0.0258366 7.9752 0.00106979 8.09441 3.3898e-05C8.21361 -0.00100199 8.33183 0.0217135 8.44217 0.0668554C8.5525 0.111997 8.65275 0.178661 8.73704 0.262957C8.82134 0.347254 8.888 0.447494 8.93314 0.55783C8.97829 0.668165 9.001 0.786386 8.99997 0.905595C8.99893 1.0248 8.97416 1.14261 8.92711 1.25215C8.88006 1.36168 8.81166 1.46075 8.72591 1.54357Z"
+					fill="white" />
+			</svg>
+		</div>
+		<div class="sidemenu__body flex">
+			<div class="sidemenu__item callback-open">
+				<div class="sidemenu__icon">
+					<img src="media/svg/phone.svg" alt="">
+				</div>
+				<p class="sidemenu__name">
+					Свяжитесь
+					со&nbsp;мной
+				</p>
+			</div>
+			<a href="#quiz" class="sidemenu__item" data-anchor-btn-js>
+				<div class="sidemenu__icon">
+					<img src="media/svg/calc.svg" alt="">
+				</div>
+				<p class="sidemenu__name">
+					Рассчитать
+				</p>
+			</a>
+			<a href="#drive" class="sidemenu__item" data-anchor-btn-js="">
+				<div class="sidemenu__icon">
+					<img src="media/svg/rocket.svg" alt="">
+				</div>
+				<p class="sidemenu__name">
+					Тест-драйв со
+					скидкой 50%
+				</p>
+			</a>
+		</div>
+		<button class="sidemenu__top" aria-label="прокрутить страницу наверх">
+			<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M7.8331 3.91699L6.70766 5.04244L3.91655 2.25133L1.12545 5.04244L0 3.91699L3.91655 0.000440723L7.8331 3.91699Z"
+					fill="white" />
+			</svg>
+
+		</button>
+	</div>
+
 	<!-- кнопка прокрутки наверх -->
 	<button class="btn-top" aria-label="прокрутить страницу наверх">
 		<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2963,7 +3033,7 @@
 	</button>
 
 	<!-- popup cookie -->
-	<div class="popup popup-cookie active">
+	<div class="popup popup-cookie ">
 		<div class="popup__body">
 			<div class="popup__close">
 				<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3003,14 +3073,14 @@
 			</p>
 
 			<form action="mailer/send.php" method="post" class="popup__form" data-form-validate-js>
-				<input type="hidden" name="formname" value="callback">
+				<input type="hidden" name="formname" value="clients">
 				<label class="popup__label label">Ваш номер телефона</label>
 				<input type="tel" class="popup__input input" name="phone" placeholder="+7 ( _ _ _ ) - _ _ _ - _ _ - _ _">
 				<button class="popup__btn main-btn main-btn--green">
 					<span class="btn-blick"></span>
 					<span class="main-btn__text">Хочу пообщаться с вашими клиентами</span>
 					<span class="main-btn__arrow">
-						<img src="media/svg/arrow-btn.svg" alt="">
+						<img data-src="media/svg/arrow-btn.svg" alt="">
 					</span>
 				</button>
 				<div class="popup__agree agree">
@@ -3049,7 +3119,7 @@
 					<span class="btn-blick"></span>
 					<span class="main-btn__text">Свяжитесь со мной</span>
 					<span class="main-btn__arrow">
-						<img src="media/svg/arrow-btn.svg" alt="">
+						<img data-src="media/svg/arrow-btn.svg" alt="">
 					</span>
 				</button>
 				<div class="popup__agree agree">
@@ -3063,7 +3133,7 @@
 	</div>
 
 	<!-- popup лидмагнит -->
-	<div class="popup popup-lidmagnit active">
+	<div class="popup popup-lidmagnit">
 		<div class="popup__body">
 			<div class="popup__close">
 				<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3076,7 +3146,7 @@
 			<p class="popup__descr">
 				Получите инструкцию в 1 клик
 			</p>
-			<form action="mailer/send.php" method="post" class="popup__form" data-download-form-js="files/catalog.pdf">
+			<form action="mailer/send.php" method="post" class="popup__form" data-download-form-js="files/instruction.pdf">
 				<input type="hidden" name="formname" value="catalog">
 				<div class="popup__group">
 					<label class="popup__label label">Куда прислать?</label>
@@ -3093,10 +3163,10 @@
 						</div>
 						<div class="select-social__img social">
 							<div class="social__item social__item-telegram">
-								<img src="media/svg/tg.svg" alt="">
+								<img data-src="media/svg/tg.svg" alt="">
 							</div>
 							<div class="social__item social__item-whatsapp active">
-								<img src="media/svg/whatsapp-green.svg" alt="">
+								<img data-src="media/svg/whatsapp-green.svg" alt="">
 							</div>
 						</div>
 					</div>
@@ -3109,7 +3179,7 @@
 					<span class="btn-blick"></span>
 					<span class="main-btn__text">получить инструкцию</span>
 					<span class="main-btn__arrow">
-						<img src="media/svg/arrow-btn.svg" alt="">
+						<img data-src="media/svg/arrow-btn.svg" alt="">
 					</span>
 				</button>
 				<div class="popup__agree agree">
@@ -3394,9 +3464,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
 		integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
 		integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+	<script src="libs/jquery.inputmask.min.js"></script>
 	<script src="libs/jquery.cookie.js"></script>
 	<script src="libs/lazyload.min.js"></script>
 	<script src="libs/custom-select.min.js"></script>

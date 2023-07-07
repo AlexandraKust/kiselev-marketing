@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 100;
+	z-index: 30;
 	width: 100%;
 	padding: 3.5rem 0;
 	transition: background-color 0.5s linear;
@@ -218,6 +218,10 @@
 	}
 
 	&__rights {
+		align-self: stretch;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		font-size: 1.3rem;
 		line-height: 1.7rem;
 		color: $gray-1;
@@ -257,7 +261,6 @@
 	transform: translateX(-120%);
 	min-height: 0;
 	height: 0;
-	// transition: transform 0.8s ease;
 
 	&.active {
 		height: auto;
@@ -265,7 +268,6 @@
 	}
 
 	&__row {
-		// padding: 15rem 0 10rem;
 		padding: 3rem 0 2rem;
 		gap: 16.3rem;
 		align-items: center;
@@ -305,7 +307,7 @@
 			overflow: hidden;
 			order: 6;
 			opacity: 0;
-			transition: opacity 0.8s ease;
+			transition: opacity 0.5s ease;
 		}
 
 		&__text {
@@ -319,7 +321,7 @@
 			width: 100%;
 			order: 7;
 			opacity: 0;
-			transition: opacity 0.8s ease;
+			transition: opacity 0.5s ease;
 		}
 
 		&__whatsapp.mobile {

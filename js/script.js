@@ -1,20 +1,15 @@
 lazyload($('img[data-src]'));
 
 let nav = document.querySelector('.nav');
-window.addEventListener('resize', function () {
-	if (window.innerWidth > 768 && nav.classList.contains('active')) {
-		nav.classList.remove('active');
-		header.classList.remove('active');
-		burger.classList.remove('active');
-		document.body.classList.remove('lock');
-	}
-})
 
 setTimeout(function () {
 	nav.style.transition = 'transform 0.8s ease';
 }, 1000)
 
 $('.section-title').not('h1').not('.no-anim').addClass('animation');
+setTimeout(function () {
+	$('.hero-title').addClass('visible');
+}, 500)
 
 $(".stroke").each(anime);
 function anime() {
@@ -38,21 +33,19 @@ customSwitch.querySelector('.switch__handle').addEventListener('click', function
 })
 
 let header = document.querySelector('header');
-if (window.pageYOffset > 90) {
+if (window.pageYOffset > 30) {
 	header.classList.add('fixed');
 } else {
 	header.classList.remove('fixed');
 }
 // прилипание шапки
 window.addEventListener('scroll', function () {
-	if (window.pageYOffset > 90) {
+	if (window.pageYOffset > 30) {
 		header.classList.add('fixed');
 	} else {
 		header.classList.remove('fixed');
 	}
 });
-
-
 
 
 let burger = document.querySelector('.header__burger');
@@ -81,7 +74,7 @@ burger.addEventListener('click', function () {
 		setTimeout(function () {
 			header.classList.remove('active');
 			nav.style.minHeight = 0;
-		}, 800)
+		}, 500)
 	}
 	document.body.classList.toggle('lock');
 
@@ -172,10 +165,20 @@ selectSocial.forEach(function (selectWrap) {
 })
 
 // маска на телефон
-$("input[type='tel']").mask('+7(999)999-99-99');
+$('input[type="tel"]').inputmask({
+	mask: '+7(X99)999-99-99',
+	placeholder: '_',
+	showMaskOnHover: false,
+	definitions: {
+		'X': {
+			validator: "[0-6, 9]"
+		}
+	}
+});
 jQuery.validator.addMethod("checkMaskPhone", function (value, element) {
 	return /\+\d{1}\(\d{3}\)\d{3}-\d{2}-\d{2}/g.test(value);
 });
+
 
 // tabs
 document.querySelectorAll('.benefits__tab').forEach(function (tabsBtn) {
@@ -241,12 +244,16 @@ systemTabs.forEach((tab, index) => {
 		tab.classList.add('active');
 
 		let line = document.querySelector('.system__line');
-		if (window.innerWidth > 768) {
-			line.style.left = (e.target.offsetLeft / 10) - ((line.offsetWidth - tab.offsetWidth) / 2 / 10) + 'rem';
-		} else {
-			line.style.width = tab.offsetWidth / 10 + 'rem';
-			line.style.left = e.target.offsetLeft / 10 + 'rem';
+		lineAction();
+		function lineAction() {
+			if (window.innerWidth > 768) {
+				line.style.left = (e.target.offsetLeft) - ((line.offsetWidth - e.target.offsetWidth) / 2) + 'px';
+			} else {
+				line.style.width = e.target.offsetWidth + 'px';
+				line.style.left = e.target.offsetLeft + 'px';
+			}
 		}
+		window.addEventListener('resize', lineAction)
 
 		systemContent.forEach(content => {
 			content.classList.remove('active')
@@ -279,9 +286,6 @@ $('[data-form-validate-js]').each(function () {
 				required: true,
 				checkMaskPhone: true,
 			},
-			email: {
-				required: true
-			}
 		},
 		errorPlacement: function (error, element) { },
 		submitHandler: function () {
@@ -314,9 +318,6 @@ $('[data-download-form-js]').each(function () {
 				required: true,
 				checkMaskPhone: true
 			},
-			email: {
-				required: true
-			}
 		},
 		errorPlacement: function (error, element) { },
 		submitHandler: function () {
@@ -384,7 +385,6 @@ $(function () {
 
 function handler(event) {
 	var hash = typeof event === 'string' ? event : event.target.hash;
-	var headerHeight = $('header').height();
 
 	if (!hash)
 		return
@@ -392,7 +392,11 @@ function handler(event) {
 	var tag = $(hash);
 
 	if (tag.length) {
-		var offset = tag.offset().top - headerHeight - 50;
+		if (window.innerWidth > 768) {
+			var offset = tag.offset().top - 100;
+		} else {
+			var offset = tag.offset().top - 60;
+		}
 		$('html, body').stop().animate({
 			scrollTop: offset
 		}, 2000);
@@ -478,7 +482,7 @@ $('input[name="quiz0"], input[name="quiz3"], input[name="quiz4"]').on('change', 
 function progress(num) {
 	const percent = parseInt((100 / maxNumber) * (num + 1));
 	$('.js-quiz').text(num + 1);
-	$('.quiz__progress-inner').css('width', (percent === 100 ? 96 : percent) + '%');
+	$('.quiz__progress-inner').css('width', (percent === 100 ? 99 : percent) + '%');
 }
 progress(0);
 
@@ -556,6 +560,39 @@ btnClick();
 var quizFinalStep = function () {
 	$('.quiz__body').addClass('blur');
 
+	let input1 = document.getElementById('quiz4-1');
+	let input2 = document.getElementById('quiz4-2');
+	let input3 = document.getElementById('quiz4-3');
+	let input4 = document.getElementById('quiz4-4');
+
+	let final1 = document.querySelector('input[name="final-1"]');
+	let num1 = final1.nextElementSibling;
+
+	let final2 = document.querySelector('input[name="final-2"]');
+	let num2 = final2.nextElementSibling;
+
+	let final3 = document.querySelector('input[name="final-3"]');
+	let num3 = final3.nextElementSibling;
+
+	function insertData(data1, data2, data3) {
+		final1.value = data1;
+		num1.innerHTML = data1;
+		final2.value = data2;
+		num2.innerHTML = data2;
+		final3.value = data3;
+		num3.innerHTML = data3;
+	}
+
+	if (input1.getAttribute('checked') == 'checked') {
+		insertData("250 - 375", "33 - 50", "1 210 000 - 1 830 000")
+	} else if (input2.getAttribute('checked') == 'checked') {
+		insertData("375 - 500", "50 - 60", "1 830 000 - 2 420 000")
+	} else if (input3.getAttribute('checked') == 'checked') {
+		insertData("500 - 625", "66 - 83", "2 420 000 - 3 043 000")
+	} else if (input4.getAttribute('checked') == 'checked') {
+		insertData(">625", ">83", "от 3 043 000")
+	};
+
 	setTimeout(function () {
 		$('.quiz-item--final').addClass('visible');
 	}, 1500)
@@ -563,9 +600,8 @@ var quizFinalStep = function () {
 	setTimeout(function () {
 		$('.quiz__body').removeClass('blur');
 	}, 1000)
+
 }
-
-
 
 // слайдеры
 let swipers = document.querySelectorAll('.swiper');
@@ -660,17 +696,18 @@ let openCallbackPopup = document.querySelectorAll('.callback-open');
 let confPopup = document.querySelector('.popup-conf');
 let openConfPopup = document.querySelectorAll('.conf');
 
-let legalPopup = document.querySelector('.popup-legal');
-let openLegalPopup = document.querySelectorAll('.legal-open');
+let clientPopup = document.querySelector('.popup-clients');
+let openClientPopup = document.querySelectorAll('.clients-open');
 
-let mapPopup = document.querySelector('.popup-map');
-let openMapPopup = document.querySelectorAll('.map-open');
+let lidmagnitPopup = document.querySelector('.popup-lidmagnit');
+let openLidmagnitPopup = document.querySelectorAll('.lidmagnit-open');
+
 
 // открытие popup
 openPopup(openConfPopup, confPopup);
 openPopup(openCallbackPopup, callbackPopup);
-openPopup(openLegalPopup, legalPopup);
-openPopup(openMapPopup, mapPopup);
+openPopup(openClientPopup, clientPopup);
+openPopup(openLidmagnitPopup, lidmagnitPopup);
 
 function openPopup(btnOpen, popup) {
 	btnOpen.forEach(function (item) {
@@ -702,7 +739,7 @@ popups.forEach(function (popup) {
 
 function closePopup(popup) {
 	popup.classList.remove('active');
-	if (!nav.classList.contains('nav--active')) document.body.classList.remove('lock');
+	if (!nav.classList.contains('active')) document.body.classList.remove('lock');
 }
 
 
@@ -717,19 +754,6 @@ if (hideTheModal == null) {
 	}, 3000);
 }
 
-
-const sliderEl = document.querySelectorAll("input[type='range']");
-sliderEl.forEach(function (range) {
-	const tempSliderValue = range.value;
-	const progress = (tempSliderValue / range.max) * 100;
-	range.style.background = `linear-gradient(to right, #42B214 ${progress}%, #cacaca ${progress}%)`;
-
-	range.addEventListener("input", (event) => {
-		const tempSliderValue = event.target.value;
-		const progress = (tempSliderValue / range.max) * 100;
-		range.style.background = `linear-gradient(to right, #42B214 ${progress}%, #cacaca ${progress}%)`;
-	})
-})
 
 // липкое боковое меню
 let sideMenu = document.querySelector('.sidemenu');

@@ -6,14 +6,14 @@ require 'class.smtp.php';
 $phone = $_POST['phone'];
 $social = $_POST['social'];
 
+$question_0 = $_POST['title-0'];
+$answer_0 = $_POST["quiz0"];
+
 $question_1 = $_POST['title-1'];
-$answer_1 = $_POST["quiz1"];
-
-$question_2 = $_POST['title-2'];
-$answer_2 = $_POST['quiz2'];
-
-$question_2_2 = $_POST['title-2_2'];
-$answer_2_2 = $_POST['quiz2_2'];
+$answer_1all = $_POST["quiz1"];
+for($a = 0; $a<count($answer_1all); $a++) {
+	$answer_1 .= $answer_1all[$a].', ';
+}
 
 $question_3 = $_POST['title-3'];
 $answer_3 = $_POST['quiz3'];
@@ -21,38 +21,56 @@ $answer_3 = $_POST['quiz3'];
 $question_4 = $_POST['title-4'];
 $answer_4 = $_POST['quiz4'];
 
-$question_5 = $_POST['title-5'];
-$answer_5 = $_POST['quiz5'];
+$quizFinalTitle_1 = $_POST['title-final-1'];
+$answerFinal_1 = $_POST['final-1'];
 
-$question_6 = $_POST['title-6'];
-$answer_6 = $_POST['quiz6'];
+$quizFinalTitle_2 = $_POST['title-final-2'];
+$answerFinal_2 = $_POST['final-2'];
+
+$quizFinalTitle_3 = $_POST['title-final-3'];
+$answerFinal_3 = $_POST['final-3'];
 
 
 if ($_POST['formname'] == 'callback') {
-$msg = '
-Пользователь заказал обратный звонок. <br>
-Телефон: <b>' . $phone .' </b><br>
-';
-} else if ($_POST['formname'] == 'how') {
-$msg = '
-Пользователь скачал каталог "" <br>
-Телефон: <b> ' . $phone .' </b><br>
-Способ связи: <b> ' . $social . ' </b>
-';
+	$msg = '
+	Пользователь заказал обратный звонок. 
+	Телефон: ' . $phone .' 
+	';
+} else if ($_POST['formname'] == 'clients') {
+	$msg = '
+	Пользователь хочет получить контакты клиентов. 
+	Телефон:  ' . $phone .' 
+	';
+} else if ($_POST['formname'] == 'testdrive') {
+	$msg = '
+	Пользователь оставил заявку на тест-драйв. 
+	Телефон:  ' . $phone .' 
+	';
+} else if ($_POST['formname'] == 'catalog') {
+	$msg = '
+	Пользователь скачал инструкцию. 
+	Телефон:  ' . $phone .' 
+	Способ связи:  ' . $social . ' 
+	';
 } else if ($_POST['formname'] == 'quiz') {
-$msg = '
-Пользователь прошёл тест: <br>
-1. ' . $question_1 . ' Ответ: <b>' . $answer_1 . ' </b><br>
-2.1. ' . $question_2 . ' Ответ: <b>' . $answer_2 . ' </b><br>
-2.2. ' . $question_2_2 . ' Ответ: <b>' . $answer_2_2 . ' </b><br>
-3. ' . $question_3 . ' Ответ: <b>' . $answer_3 . ' </b><br>
-4. ' . $question_4 . ' Ответ: <b>' . $answer_4 . ' </b><br>
-5. ' . $question_5 . ' Ответ: <b>' . $answer_5 . ' </b><br>
-6. ' . $question_6 . ' Ответ: <b>' . $answer_6 . ' </b><br>
-<br>
-Телефон: <b> ' . $phone .' </b><br>
-Способ связи: <b> ' . $social . ' </b>
-';
+	$msg = '
+	Пользователь прошёл тест: 
+	1. ' . $question_0 . ' Ответ: ' . $answer_0 . ' 
+	2. ' . $question_1 . ' Ответ: ' . $answer_1 . ' 
+	3.  Слайд с текстом гарантий 
+	4. ' . $question_3 . ' Ответ: ' . $answer_3 . ' 
+	5. ' . $question_4 . ' Ответ: ' . $answer_4 . ' 
+	
+
+	Предварительный результат: 
+	' . $quizFinalTitle_1 . ' : ' . $answerFinal_1 . ' 
+	' . $quizFinalTitle_2 . ' : ' . $answerFinal_2 . ' 
+	' . $quizFinalTitle_3 . ' : ' . $answerFinal_3 . ' 
+
+
+	Телефон:  ' . $phone .' 
+	Способ связи:  ' . $social . ' 
+	';
 }
 
 // Настройки

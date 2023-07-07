@@ -120,6 +120,10 @@ b {
 	color: $accent-color;
 }
 
+.validate_error {
+	border: 0.1rem solid red;
+}
+
 .underline {
 	position: relative;
 
@@ -138,6 +142,11 @@ b {
 	font-weight: 500;
 	color: $accent-color;
 	text-decoration: underline;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
 }
 
 .visually-hidden {
@@ -211,7 +220,7 @@ b {
 	padding: 2.6rem 3.4rem;
 	border-radius: 1.5rem;
 	overflow: hidden !important;
-	transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 	cursor: default;
 
 	&__text {
@@ -242,13 +251,17 @@ b {
 		color: white;
 		letter-spacing: 0.05em;
 
-
 		&:hover {
 			background-color: darken($accent-color, $amount: 8%);
+			box-shadow: rgba(#fff, 0.2) 0.5rem 0.5rem 0.9rem;
 
 			.main-btn__arrow {
 				transform: rotate(45deg);
 			}
+		}
+
+		&:active {
+			box-shadow: none;
 		}
 	}
 
@@ -350,125 +363,10 @@ b {
 }
 
 
-// липкое меню справа
-.sidemenu {
-	position: fixed;
-	right: 0;
-	top: 50%;
-	z-index: 20;
-	width: 10rem;
-	transform: translateY(-50%);
-
-	&.hidden {
-		pointer-events: none;
-	}
-
-	&__close {
-		width: 3.3rem;
-		height: 3.3rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0 auto 2.3rem;
-		border-radius: 50%;
-		background-color: $accent-color;
-		transition: background-color 0.3s ease-in-out, transform 0.7s ease-in-out;
-
-		&:hover {
-			cursor: pointer;
-			background-color: darken($color: $accent-color, $amount: 10%);
-		}
-
-		svg {
-			width: 0.9rem;
-			height: 0.9rem;
-			transition: transform 0.7s ease-in-out;
-		}
-
-		&.close {
-			transform: translateX(10rem);
-		}
-	}
-
-	&__body {
-		flex-direction: column;
-		gap: 0.6rem;
-		margin-bottom: 2.1rem;
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.7s linear;
-	}
-
-	&__item {
-		flex-shrink: 0;
-		width: 100%;
-		height: 10rem;
-		padding: 1rem;
-		border-radius: 0.5rem 0 0 0.5rem;
-		background-color: $accent-color;
-		transition: background-color 0.3s ease-in-out;
-
-		&:hover {
-			cursor: pointer;
-			background-color: darken($color: $accent-color, $amount: 10%);
-		}
-	}
-
-	&__icon {
-		width: auto;
-		height: 3rem;
-		margin: 0 auto 1rem;
-	}
-
-	&__name {
-		font-size: 1.2rem;
-		line-height: 1rem;
-		text-align: center;
-		color: #fff;
-		cursor: pointer;
-	}
-
-	&__top {
-		width: 3.3rem;
-		height: 3.3rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0 auto;
-		border-radius: 50%;
-		background-color: $accent-color;
-		transition: background-color 0.3s ease-in-out,
-			transform 0.7s ease-in-out;
-
-		svg {
-			width: 0.5rem;
-			height: 0.5rem;
-		}
-
-		path {
-			stroke: #fff;
-		}
-
-		&:hover {
-			cursor: pointer;
-			background-color: darken($color: $accent-color, $amount: 10%);
-		}
-
-		&.active {
-			transform: rotate(180deg);
-		}
-
-		&.close {
-			transform: translateX(10rem);
-		}
-	}
-}
-
-
 // кнопка прокрутки наверх
 .btn-top {
 	position: fixed;
-	bottom: -4rem;
+	bottom: -5rem;
 	right: 1rem;
 	z-index: 10;
 	width: 5rem;
@@ -539,7 +437,7 @@ b {
 		color: $main-color;
 	}
 
-	&:focus {
+	&:not(.validate_error):focus {
 		border-color: $accent-color;
 	}
 }
@@ -720,7 +618,7 @@ b {
 		position: absolute;
 		z-index: 5;
 		top: 50%;
-		right: 1.25vw;
+		right: 3.6rem;
 		transform: translateY(-50%);
 
 		&.active {
@@ -731,11 +629,139 @@ b {
 	.social__item-telegram,
 	.social__item-whatsapp {
 		display: none;
-		width: 3.6rem;
+		width: 3.7rem;
 		height: 3.6rem;
 
 		&.active {
 			display: flex;
+		}
+	}
+}
+
+// липкое меню справа
+.sidemenu {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 20;
+	width: 10rem;
+	transform: translateY(-50%);
+
+	&.hidden {
+		pointer-events: none;
+	}
+
+	&__close {
+		width: 3.3rem;
+		height: 3.3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 2.3rem;
+		border-radius: 50%;
+		background-color: $accent-color;
+		transition: background-color 0.3s ease-in-out, transform 0.7s ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			background-color: darken($color: $accent-color, $amount: 10%);
+		}
+
+		svg {
+			width: 0.9rem;
+			height: 0.9rem;
+		}
+
+		&.close {
+			transform: translateX(10rem);
+		}
+	}
+
+	&__body {
+		flex-direction: column;
+		gap: 0.6rem;
+		margin-bottom: 2.3rem;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.7s linear;
+	}
+
+	&__item {
+		flex-shrink: 0;
+		width: 100%;
+		height: 10rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 1.1rem 0.9rem;
+		border-radius: 0.5rem 0 0 0.5rem;
+		background-color: $accent-color;
+		transition: background-color 0.3s ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			background-color: darken($color: $accent-color, $amount: 10%);
+		}
+
+		&:first-child .sidemenu__icon {
+			width: 2.1rem;
+			margin-bottom: 1.2rem;
+		}
+
+		&:nth-child(2) .sidemenu__icon {
+			width: 2.7rem;
+			margin-bottom: 0.5rem;
+		}
+
+		&:nth-child(3) .sidemenu__icon {
+			width: 3rem;
+			margin-bottom: 0.8rem;
+		}
+	}
+
+	&__icon {
+		height: auto;
+		margin: 0 auto;
+	}
+
+	&__name {
+		font-weight: 500;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		text-align: center;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	&__top {
+		width: 3.3rem;
+		height: 3.3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		border-radius: 50%;
+		background-color: $accent-color;
+		transition: background-color 0.3s ease-in-out,
+			transform 0.7s ease-in-out;
+
+		svg {
+			width: 0.8rem;
+			height: 0.6rem;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background-color: darken($color: $accent-color, $amount: 10%);
+		}
+
+		&.active {
+			transform: rotate(180deg);
+		}
+
+		&.close {
+			transform: translateX(10rem);
 		}
 	}
 }
@@ -837,6 +863,20 @@ b {
 		}
 	}
 
+	// кнопка прокрутки наверх
+	.btn-top {
+		bottom: -5rem;
+		right: 1rem;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 0.8rem;
+
+		svg {
+			width: 1.3rem;
+			height: 1rem;
+		}
+	}
+
 	// label
 	.label {
 		padding-left: 1.6rem;
@@ -877,6 +917,89 @@ b {
 		svg {
 			width: 0.8rem;
 			height: 0.8rem;
+		}
+	}
+
+	.select {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+
+		& .custom-select-opener {
+			padding: 2.4rem 1.8rem;
+
+			&::after {
+				right: -1rem;
+				width: 0.5rem;
+				height: 0.5rem;
+			}
+		}
+
+		& .custom-select-option {
+			padding: 2rem 1.8rem;
+		}
+	}
+
+	.select-social {
+		&__img {
+			right: 1.5rem;
+		}
+
+		.social__item-telegram,
+		.social__item-whatsapp {
+			width: 2.5rem;
+			height: 2.4rem;
+		}
+	}
+
+	// липкое правое меню
+	.sidemenu {
+		width: 6rem;
+
+		&__close {
+			width: 2.5rem;
+			height: 2.5rem;
+			margin-bottom: 1rem;
+
+			svg {
+				width: 0.7rem;
+				height: 0.7rem;
+			}
+		}
+
+		&__body {
+			gap: 0.4rem;
+			margin-bottom: 1rem;
+		}
+
+		&__item {
+			height: 6rem;
+			padding: 0.3rem;
+
+			&:first-child .sidemenu__icon {
+				width: 1.6rem;
+				margin-bottom: 0.5rem;
+			}
+
+			&:nth-child(2) .sidemenu__icon {
+				width: 1.7rem;
+				margin-bottom: 0.5rem;
+			}
+
+			&:nth-child(3) .sidemenu__icon {
+				width: 1.7rem;
+				margin-bottom: 0.5rem;
+			}
+		}
+
+
+		&__name {
+			font-size: 0.9rem;
+			line-height: 1;
+		}
+
+		&__top {
+			width: 2.5rem;
+			height: 2.5rem;
 		}
 	}
 
