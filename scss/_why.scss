@@ -62,17 +62,16 @@
 		justify-content: center;
 		padding: 3.6rem;
 		border-radius: 1.5rem;
-		outline: 0.1rem solid #2d2d33;
-		outline-offset: -0.1rem;
+		border: 0.1rem solid #2d2d33;
 		font-weight: 500;
 		font-size: 2.4rem;
 		line-height: 3rem;
 		color: $gray-1;
 		text-align: center;
-		transition: ouline 0.3s ease-in-out;
+		transition: border-color 0.3s ease-in-out;
 
 		&:hover {
-			outline-color: $accent-color;
+			border-color: $accent-color;
 		}
 
 		&:nth-child(1),

@@ -3588,8 +3588,7 @@ b {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  outline: 0.2rem solid #2d2d33;
-  outline-offset: -0.1rem;
+  border: 0.2rem solid #2d2d33;
   border-radius: 1.5rem;
   font-weight: 500;
   font-size: 2.7rem;
@@ -3604,14 +3603,14 @@ b {
 .benefits__tab:not(.active):hover {
   z-index: 2;
   color: #30BF58;
-  outline-color: #30BF58;
+  border-color: #30BF58;
   -webkit-box-shadow: inset 0 0 2rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 2rem 1rem rgba(0, 0, 0, 0.2);
 }
 .benefits__tab.active {
   z-index: 2;
   background-color: #30BF58;
-  outline-color: #30BF58;
+  border-color: #30BF58;
   font-weight: 700;
   color: #fff;
 }
@@ -4304,6 +4303,7 @@ b {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 49.6rem;
           flex: 0 0 49.6rem;
+  width: 51rem;
 }
 .drive__title {
   margin-bottom: 3.6rem;
@@ -7997,7 +7997,7 @@ b {
 
 .popup-cookie {
   width: 51rem;
-  height: 26rem;
+  height: 30rem;
   top: auto;
   bottom: 0;
   background-color: transparent;
@@ -8608,19 +8608,18 @@ b {
           justify-content: center;
   padding: 3.6rem;
   border-radius: 1.5rem;
-  outline: 0.1rem solid #2d2d33;
-  outline-offset: -0.1rem;
+  border: 0.1rem solid #2d2d33;
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 3rem;
   color: #8d8d8d;
   text-align: center;
-  -webkit-transition: ouline 0.3s ease-in-out;
-  -o-transition: ouline 0.3s ease-in-out;
-  transition: ouline 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 .why__item:hover {
-  outline-color: #30BF58;
+  border-color: #30BF58;
 }
 .why__item:nth-child(1), .why__item:nth-child(2) {
   padding-left: 5.4rem;
