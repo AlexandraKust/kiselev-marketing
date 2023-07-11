@@ -1,0 +1,172 @@
+.diagnostics {
+	margin-top: -7.7rem;
+	padding-left: 14.3rem;
+	padding-bottom: 6rem;
+	background: url('../media/img/thanks-dark-bg.jpg') 0 12rem / 100% 90% no-repeat;
+
+	&__title {
+		margin-bottom: 8rem;
+		line-height: 7.5rem;
+
+		.section-title__up {
+			margin-bottom: 6rem;
+		}
+	}
+
+	&__row {
+		flex-wrap: wrap;
+		align-items: start;
+		row-gap: 6.4rem;
+	}
+
+	&__text {
+		flex: 0 0 66.4rem;
+		margin-right: 10.1rem;
+	}
+
+	&__subtitle {
+		margin-bottom: 4.4rem;
+		font-weight: 500;
+		font-size: 6rem;
+		line-height: 8rem;
+	}
+
+	&__list {
+		flex-wrap: wrap;
+		column-gap: 17.9rem;
+		row-gap: 4.6rem;
+	}
+
+	&__item {
+		flex: 0 1 21.9rem;
+		font-size: 2rem;
+		line-height: 2.7rem;
+	}
+
+	&__img {
+		flex: 0 0 80.9rem;
+	}
+
+
+	&__descr {
+		flex: 0 0 70.8rem;
+		margin-right: 17.6rem;
+		font-size: 3.2rem;
+		line-height: 4.5rem;
+		color: $gray-1;
+
+		b {
+			color: #fff;
+		}
+	}
+
+	&__btn {
+		padding: 3.4rem 7.7rem;
+		gap: 3rem;
+		line-height: 2.6rem;
+
+		.main-btn__arrow {
+			flex: 0 0 5.6rem;
+			width: 5.6rem;
+			height: 5.6rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 1.3rem;
+			background-color: #fff;
+			transform: none;
+
+			img {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+
+		&.main-btn--green:not(:disabled):hover .main-btn__arrow {
+			transform: none;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.diagnostics {
+		margin-top: 0;
+		padding: 5.9rem 0 2.2rem;
+
+		&__title {
+			margin-bottom: 3.4rem;
+			font-size: 2.4rem;
+			line-height: 3.2rem;
+
+			.section-title__up {
+				margin-bottom: 0.9rem;
+				font-size: 4rem;
+			}
+
+			.mobile {
+				display: inline;
+			}
+		}
+
+		&__row {
+			gap: 3.2rem;
+		}
+
+		&__text {
+			order: 1;
+			flex-basis: 100%;
+			margin-right: 0;
+		}
+
+		&__subtitle {
+			margin-bottom: 2rem;
+			font-size: 2rem;
+			line-height: 2.6rem;
+		}
+
+		&__list {
+			column-gap: 1.4rem;
+			row-gap: 1.9rem;
+		}
+
+		&__item {
+			flex-basis: 13.1rem;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
+
+		&__img {
+			flex-basis: 100%;
+			order: 3;
+		}
+
+		&__descr {
+			flex-basis: 100%;
+			order: 2;
+			margin-right: 0;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+		}
+
+		&__btn {
+			order: 4;
+			width: 100%;
+			gap: 1.2rem;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+			padding: 2rem 1.7rem;
+
+			.main-btn__arrow {
+				flex: 0 0 3.2rem;
+				width: 3.2rem;
+				height: 3.2rem;
+				border-radius: 0.8rem;
+
+				img {
+					width: 1.4rem;
+					height: 1.4rem;
+				}
+			}
+		}
+	}
+}

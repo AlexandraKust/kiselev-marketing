@@ -28,9 +28,11 @@ function anime() {
 }
 
 let customSwitch = document.querySelector('.switch');
-customSwitch.querySelector('.switch__handle').addEventListener('click', function () {
-	customSwitch.classList.toggle('active');
-})
+if (customSwitch) {
+	customSwitch.querySelector('.switch__handle').addEventListener('click', function () {
+		customSwitch.classList.toggle('active');
+	})
+}
 
 let header = document.querySelector('header');
 if (window.pageYOffset > 30) {
@@ -545,9 +547,7 @@ function btnClick() {
 			</p>
 			`);
 
-			setTimeout(function () {
-				quizFinalStep();
-			}, 500)
+			quizFinalStep();
 		}
 
 		setTimeout(function () {
@@ -628,37 +628,39 @@ swipers.forEach(function (slider) {
 
 let teamSwiper = document.querySelector('.team__swiper');
 let membersSwiper = document.querySelector('.team__members');
-setTimeout(function () {
-	teamSwiper.classList.add('swiper');
-	membersSwiper.classList.add('swiper');
-	var teamMembers = new Swiper(membersSwiper, {
-		slidesPerView: 'auto',
-		freeMode: true,
-		watchSlidesProgress: true,
-		clickable: true,
-	});
-	var swiper2 = new Swiper(teamSwiper, {
-		loop: false,
-		speed: 700,
-		centeredSlides: false,
-		touchRatio: 1,
-		slidesPerView: 1,
-		freeMode: true,
-		effect: "fade",
-
-		navigation: {
-			nextEl: teamSwiper.closest('section').querySelector('.slider-btn--next'),
-			prevEl: teamSwiper.closest('section').querySelector('.slider-btn--prev'),
-		},
-		pagination: {
-			el: teamSwiper.closest('section').querySelector('.swiper-pagination'),
+if (teamSwiper) {
+	setTimeout(function () {
+		teamSwiper.classList.add('swiper');
+		membersSwiper.classList.add('swiper');
+		var teamMembers = new Swiper(membersSwiper, {
+			slidesPerView: 'auto',
+			freeMode: true,
+			watchSlidesProgress: true,
 			clickable: true,
-		},
-		thumbs: {
-			swiper: teamMembers,
-		},
-	});
-}, 500)
+		});
+		var swiper2 = new Swiper(teamSwiper, {
+			loop: false,
+			speed: 700,
+			centeredSlides: false,
+			touchRatio: 1,
+			slidesPerView: 1,
+			freeMode: true,
+			effect: "fade",
+
+			navigation: {
+				nextEl: teamSwiper.closest('section').querySelector('.slider-btn--next'),
+				prevEl: teamSwiper.closest('section').querySelector('.slider-btn--prev'),
+			},
+			pagination: {
+				el: teamSwiper.closest('section').querySelector('.swiper-pagination'),
+				clickable: true,
+			},
+			thumbs: {
+				swiper: teamMembers,
+			},
+		});
+	}, 500)
+}
 
 
 
@@ -800,11 +802,11 @@ if (sideMenu) {
 		}
 	})
 
-	if (window.innerWidth < 768) {
-		setTimeout(function () {
-			sideTop.click();
-		}, 2000)
-	}
+	// if (window.innerWidth < 768) {
+	// 	setTimeout(function () {
+	// 		sideTop.click();
+	// 	}, 2000)
+	// }
 }
 
 // анимация цифр
@@ -826,3 +828,23 @@ $(function () {
 		})
 	});
 })
+
+var months = [
+	'Январе',
+	'Феврале',
+	'Марте',
+	'Апреле',
+	'Мае',
+	'Июне',
+	'Июле',
+	'Августе',
+	'Сентябре',
+	'Октябре',
+	'Ноябре',
+	'Декабре',
+];
+
+var itsNow = new Date();
+let monthNow = months[itsNow.getMonth()].toLowerCase();
+let offerMonth = document.querySelector('.singup__month');
+if (offerMonth) offerMonth.innerHTML = monthNow;

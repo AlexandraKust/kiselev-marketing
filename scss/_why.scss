@@ -1,0 +1,194 @@
+.why {
+	position: relative;
+	padding: 6rem 0 1rem;
+	background: url('../media/img/why-bg.png') 0 bottom / 100% auto no-repeat;
+
+	overflow: hidden;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -14.1rem;
+		width: 112rem;
+		height: 28.4rem;
+		background: url('../media/svg/marketing.svg') 0 0 / 100% 100% no-repeat;
+	}
+
+	&__title {
+		margin-bottom: 6.4rem;
+		padding-left: 7rem;
+		max-width: 125.5rem;
+		line-height: 8rem;
+	}
+
+	&__body {
+		margin-bottom: 6.8rem;
+	}
+
+	&__main {
+		flex: 0 0 74rem;
+		border-radius: 1.5rem;
+		padding: 7.2rem 15.7rem 7.3rem 7.1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: #fff;
+	}
+
+	&__descr {
+		font-size: 2.4rem;
+		line-height: 3.4rem;
+		color: $gray-1;
+	}
+
+	&__subtitle {
+		padding-right: 10.6rem;
+		font-weight: 700;
+		font-size: 4rem;
+		line-height: 5rem;
+		color: $main-color;
+	}
+
+	&__list {
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		flex: 0 0 50%;
+		min-height: 27.9rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3.6rem;
+		border-radius: 1.5rem;
+		outline: 0.1rem solid #2d2d33;
+		outline-offset: -0.1rem;
+		font-weight: 500;
+		font-size: 2.4rem;
+		line-height: 3rem;
+		color: $gray-1;
+		text-align: center;
+		transition: ouline 0.3s ease-in-out;
+
+		&:hover {
+			outline-color: $accent-color;
+		}
+
+		&:nth-child(1),
+		&:nth-child(2) {
+			padding-left: 5.4rem;
+			padding-right: 5.4rem;
+		}
+	}
+
+	&__btn {
+		margin: 0 auto;
+		padding: 3.2rem 9rem;
+		gap: 3rem;
+		line-height: 2.6rem;
+
+		.main-btn__arrow {
+			flex: 0 0 5.6rem;
+			width: 5.6rem;
+			height: 5.6rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 1.3rem;
+			background-color: #fff;
+			transform: none;
+
+			img {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+
+		&.main-btn--green:not(:disabled):hover .main-btn__arrow {
+			transform: none;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.why {
+		padding: 2.2rem 0 2rem;
+		background: url('../media/img/thanks-dark-bg-mobile.jpg') 0 0 / 100% 100% no-repeat;
+
+		&::after {
+			top: 13.3rem;
+			right: -2.5rem;
+			width: 26.6rem;
+			height: 6.8rem;
+		}
+
+		&__title {
+			margin-bottom: 2.4rem;
+			padding: 0;
+			font-size: 2.4rem;
+			line-height: 3.2rem;
+		}
+
+		&__body {
+			flex-direction: column;
+			margin-bottom: 2.1rem;
+		}
+
+		&__main {
+			flex-basis: auto;
+			width: 100%;
+			padding: 2rem;
+			gap: 3.2rem;
+		}
+
+		&__descr {
+			font-size: 1.4rem;
+			line-height: 2rem;
+		}
+
+		&__subtitle {
+			padding-right: 5rem;
+			font-size: 2rem;
+			line-height: 2.5rem;
+		}
+
+		&__item {
+			flex-basis: 100%;
+			min-height: 14.1rem;
+			padding: 2.4rem 2.2rem;
+			font-size: 1.4rem;
+			line-height: 1.8rem;
+
+			&:nth-child(1) {
+				padding-left: 4.5rem;
+				padding-right: 4.5rem;
+			}
+
+			&:nth-child(2) {
+				padding-left: 1.6rem;
+				padding-right: 1.6rem;
+			}
+		}
+
+		&__btn {
+			width: 100%;
+			gap: 1.2rem;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+			padding: 2rem 1.7rem;
+
+			.main-btn__arrow {
+				flex: 0 0 3.2rem;
+				width: 3.2rem;
+				height: 3.2rem;
+				border-radius: 0.8rem;
+
+				img {
+					width: 1.4rem;
+					height: 1.4rem;
+				}
+			}
+		}
+	}
+}
