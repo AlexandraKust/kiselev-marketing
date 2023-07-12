@@ -1,4 +1,5 @@
 lazyload($('img[data-src]'));
+$.fancybox.defaults.mobile = {};
 
 let nav = document.querySelector('.nav');
 
@@ -773,6 +774,12 @@ if (sideMenu) {
 			sideMenu.classList.add('visible')
 		} else {
 			sideMenu.classList.remove('visible')
+		};
+
+		if (window.innerWidth < 768) {
+			setTimeout(function () {
+				sideTop.click();
+			}, 2000)
 		}
 	})
 
