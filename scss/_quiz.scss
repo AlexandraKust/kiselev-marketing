@@ -480,6 +480,7 @@
 	position: relative;
 	padding-left: 4.4rem;
 	gap: 5.6rem;
+	align-items: center;
 
 	&::before {
 		content: '';
@@ -855,7 +856,7 @@
 			line-height: 2.5rem;
 
 			span {
-				font-size: 1.3rem;
+				font-size: 1.7rem;
 			}
 		}
 	}

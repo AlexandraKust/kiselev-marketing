@@ -207,10 +207,10 @@ for (let i = 0; i < servNumber.length; i++) {
 	i < 9 ? servNumber[i].innerHTML = '0' + (i + 1) : servNumber[i].innerHTML = i + 1;
 }
 
-let servBtn = document.querySelectorAll('.services__btn');
-servBtn.forEach(btn => {
-	btn.addEventListener('click', function () {
-		btn.closest('.services__slide').classList.toggle('active');
+let servCard = document.querySelectorAll('.services__slide');
+servCard.forEach(card => {
+	card.addEventListener('click', function () {
+		card.classList.toggle('active');
 	})
 })
 
@@ -760,6 +760,22 @@ if (hideTheModal == null) {
 // липкое боковое меню
 let sideMenu = document.querySelector('.sidemenu');
 if (sideMenu) {
+
+	window.addEventListener('scroll', function () {
+		if (window.pageYOffset > heightOfHero && window.innerWidth > 768) {
+			sideMenu.classList.add('visible')
+		} else {
+			sideMenu.classList.remove('visible')
+		}
+	})
+	document.addEventListener('DOMContentLoaded', function () {
+		if (window.pageYOffset > heightOfHero && window.innerWidth > 768) {
+			sideMenu.classList.add('visible')
+		} else {
+			sideMenu.classList.remove('visible')
+		}
+	})
+
 	let sideClose = sideMenu.querySelector('.sidemenu__close');
 	let sideBody = sideMenu.querySelector('.sidemenu__body');
 	let sideTop = sideMenu.querySelector('.sidemenu__top');
@@ -801,12 +817,6 @@ if (sideMenu) {
 			sideBody.style.maxHeight = sideBody.scrollHeight + "px";
 		}
 	})
-
-	// if (window.innerWidth < 768) {
-	// 	setTimeout(function () {
-	// 		sideTop.click();
-	// 	}, 2000)
-	// }
 }
 
 // анимация цифр

@@ -647,10 +647,15 @@ b {
 	top: 50%;
 	z-index: 20;
 	width: 10rem;
-	transform: translateY(-50%);
+	transform: translateY(-50%) translateX(10rem);
+	transition: transform 0.7s ease-in-out;
 
 	&.hidden {
 		pointer-events: none;
+	}
+
+	&.visible {
+		transform: translateY(-50%) translateX(0);
 	}
 
 	&__close {
@@ -956,6 +961,7 @@ b {
 	// липкое правое меню
 	.sidemenu {
 		width: 6rem;
+		transform: translateY(-50%);
 
 		&__close {
 			width: 2.5rem;
